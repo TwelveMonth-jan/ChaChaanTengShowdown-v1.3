@@ -1,0 +1,20 @@
+Card Name: 蟑螂腳 (Cockroach Leg)
+Category: 垃圾卡 (Trash Card)
+Quantity: x2
+Quote: 「嘩！碟入面有嘢郁！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon single disgusting cockroach leg on a plate, drawn in Exploding Kittens art style. The cockroach leg is exaggerated with tiny hairs, jagged segments, and it's twitching creepily. A green toxic aura emanates from it with stink wave lines. A tiny skull icon floats above. The plate beneath is a classic white cha chaan teng plate that looks horrified with a shocked face on it. Bold black outlines around everything. Background: soft purple (#EDE9FE). Tiny flies buzzing around it.
+
+Card Layout:
+- Top: Card title "蟑螂腳" in bold Chinese characters with small English subtitle "COCKROACH LEG" directly beneath (about 40% the title size), background light purple
+- Center: The illustration (main focus, ~70% of card area)
+- Bottom: Flavor text "嘩！碟入面有嘢郁！", followed by a smaller italic English line "Ugh! Something's moving on the plate!"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light purple / gross green accent
+
+Dimensions: 63mm x 88mm (standard poker card size)

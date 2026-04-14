@@ -1,0 +1,23 @@
+Card Name: 客滿 (Full House)
+Category: 功能牌 (Action Card)
+Quantity: x2
+Type: 防禦型 / 反應型
+Effect: 當有玩家對你使用「強行帶位」時，立刻打出此牌取消該次強行帶位
+Quote: 「唔好意思，冇位喇！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon waiter blocking the entrance with arms crossed in an X shape, drawn in Exploding Kittens art style. A sassy cha chaan teng waitress stands defiantly with her arms crossed forming a big "X", shaking her head firmly with a stern face and puckered lips. Behind her, a giant red "客滿" (Full House) sign is glowing with dramatic light rays. The restaurant interior behind her is chaotically packed with customers crammed together like sardines. A rejected customer is visible being turned away with a sad face. Bold black outlines around everything. Background: warm orange (#FED7AA). A giant red "NO" symbol overlay.
+
+Card Layout:
+- Top: Card title "客滿" in bold Chinese characters with small English subtitle "FULL HOUSE" directly beneath (about 40% the title size), background light orange
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom: Effect box — "效果：取消一次「強行帶位」，被取消的客人卡與強行帶位牌一同棄置", followed by a smaller italic English line "Cancel a Forced Seating — both cards are discarded"
+- Footer tags: "反應型 / Reaction" + "防禦型 / Defense"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light orange / defensive red
+
+Dimensions: 63mm x 88mm (standard poker card size)

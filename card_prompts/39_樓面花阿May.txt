@@ -1,0 +1,35 @@
+Card Name: 樓面花 阿May (Floor Star May)
+Category: 角色卡 (Character Card)
+Quantity: x1
+
+Stats:
+- 🔥 抗壓: 5
+- ✋ 手勢: 6
+- 🪑 桌位: 2
+
+Passive 被動「人見人愛」:
+每當其他玩家對你使用「強行帶位」功能牌時（無論是否被「客滿」取消），你立刻從牌庫抽 1 張牌。
+
+Active 主動技能「笑騎騎」(每回合 1 次):
+指定 1 位對手，直到你下一回合開始前，該對手不能對你使用任何功能牌。
+
+Quote: 「老闆～今日個靚仔嘅餐，我請你㗎！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon stylish young Hong Kong cha chaan teng waitress character, drawn in Exploding Kittens art style. A cheerful young woman in her 20s with long wavy hair tied in a high ponytail, wearing a fitted white waitress blouse with a cute pink apron and a small flower pinned to her chest. She has big sparkling eyes, glossy pink lipstick, and a bright dazzling smile that could charm anyone. She holds a small notepad to her chest with one hand and gives a cheerful wink and finger-heart with the other. Bold black outlines. Background: soft rose pink (#FBCFE8). Small floating hearts and sparkle stars around her.
+
+Card Layout:
+- Top: Card title "樓面花 阿May" in bold Chinese, subtitle "FLOOR STAR" in small English, background soft rose pink
+- Upper center: The illustration (main focus, ~45% of card area)
+- Middle: Stats bar — 🔥 5 | ✋ 6 | 🪑 2
+- Lower middle: Passive icon box — "人見人愛" with a smaller English line "Everyone's Darling — draw 1 card whenever targeted by Forced Seating"
+- Bottom: Active skill box — "笑騎騎" with a smaller English line "Sweet Smile — chosen opponent can't play action cards on you until your next turn (1/turn)"
+- Footer quote in italic, with a smaller English translation line "Boss~ this handsome guy's meal is on me!"
+- Border: Thick bold black border with rounded corners
+- Color theme: Rose pink / white
+
+Dimensions: 63mm x 88mm (standard poker card size)

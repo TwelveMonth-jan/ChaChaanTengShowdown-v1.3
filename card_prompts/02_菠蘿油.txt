@@ -1,0 +1,19 @@
+Card Name: 菠蘿油 (Pineapple Bun with Butter)
+Category: 食材卡 (Ingredient Card)
+Quantity: x7
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon pineapple bun (菠蘿包) split open with a thick slab of golden butter melting inside, drawn in Exploding Kittens art style. The bun has a big goofy grin showing teeth, with wide excited eyes and tiny stubby arms. The crackled golden-brown crust on top is exaggerated and crunchy-looking. Butter is melting and dripping dramatically. Steam clouds burst upward. Bold black outlines around everything. Background: warm golden yellow (#FEF3C7).
+
+Card Layout:
+- Top: Card title "菠蘿油" in bold Chinese characters with thick black outline, with small English subtitle "PINEAPPLE BUN W/ BUTTER" directly beneath (about 40% the size of the Chinese title)
+- Center: The illustration (main focus, ~70% of card area)
+- Bottom: Flavor text "熱辣辣菠蘿包夾一塊厚切牛油", followed by a smaller italic English line "Hot crispy bun sandwiching a thick slab of butter"
+- Border: Thick bold black border with rounded corners
+- Color theme: Golden yellow / warm brown
+
+Dimensions: 63mm x 88mm (standard poker card size)

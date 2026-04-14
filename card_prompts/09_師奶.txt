@@ -1,0 +1,24 @@
+Card Name: 師奶 (Housewife / Auntie)
+Category: 客人卡 (Customer Card)
+Quantity: x2
+Requires: 奶茶 (Milk Tea) + 蛋撻 (Egg Tart)
+Tip: 1
+Quote: 「唔該，要杯奶茶同兩個蛋撻，攞走！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon Hong Kong middle-aged housewife (師奶) character, drawn in Exploding Kittens art style. She has a permed curly hair perm (classic auntie hairstyle), wearing a floral patterned top. She's carrying multiple plastic bags from the wet market in both hands. Her face has a bossy no-nonsense expression with one eyebrow raised and lips pursed, pointing a finger demanding service. A small handheld fan in her back pocket. Bold black outlines around everything. Background: soft blue (#DBEAFE). Small bargain price tags floating around her.
+
+Card Layout:
+- Top: Card title "師奶" in bold Chinese characters with small English subtitle "HOUSEWIFE AUNTIE" directly beneath (about 40% the title size), background light blue
+- Center: The illustration (main focus, ~60% of card area)
+- Bottom left: Required ingredients panel — clearly render each required food icon with its Chinese name above and English name below in smaller text. Must show: 🍵 奶茶 / Milk Tea  +  🥧 蛋撻 / Egg Tart. Icons must be large, recognizable, labeled, and visually separated with a "+" sign. Do NOT omit or abbreviate any ingredient.
+- Bottom right: Tip value "💰 小費 1 / Tip 1"
+- Footer text: "下午茶時間" with a smaller italic English line "Afternoon tea time"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light blue / floral pink
+
+Dimensions: 63mm x 88mm (standard poker card size)

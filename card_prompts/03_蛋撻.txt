@@ -1,0 +1,19 @@
+Card Name: 蛋撻 (Egg Tart)
+Category: 食材卡 (Ingredient Card)
+Quantity: x7
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon Hong Kong egg tart, drawn in Exploding Kittens art style. The egg tart has a mischievous winking face with one eye closed and a cheeky tongue sticking out. The golden flaky pastry crust is exaggerated with visible crispy layers. The smooth custard filling on top glows bright yellow-gold. Small sparkle effects around it to show freshness. Bold black outlines around everything. Background: warm golden yellow (#FEF3C7). The tart is sitting in a classic tin foil cup.
+
+Card Layout:
+- Top: Card title "蛋撻" in bold Chinese characters with thick black outline, with small English subtitle "EGG TART" directly beneath (about 40% the size of the Chinese title)
+- Center: The illustration (main focus, ~70% of card area)
+- Bottom: Flavor text "酥皮金黃，蛋漿嫩滑，出爐即搶", followed by a smaller italic English line "Golden flaky crust, silky custard — gone the moment it leaves the oven"
+- Border: Thick bold black border with rounded corners
+- Color theme: Golden yellow / warm amber
+
+Dimensions: 63mm x 88mm (standard poker card size)

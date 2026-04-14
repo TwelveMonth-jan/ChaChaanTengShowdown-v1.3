@@ -1,0 +1,25 @@
+Card Name: 投訴王 (Complaint King)
+Category: 奧客卡 (Difficult Customer Card)
+Quantity: x1
+Requires: 公仔麵 (Instant Noodles) + 煎蛋 (Fried Egg) + 叉燒 (Char Siu / BBQ Pork)
+Tip: 2
+Special: 🔥 催單 — 每回合結束 +1 怒氣
+Quote: 「點解要等咁耐？！叫經理出嚟！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon furious complaining customer character, drawn in Exploding Kittens art style. A middle-aged man with his face beet-red, veins bulging on his forehead, mouth wide open screaming so hard his tonsils are visible. He's standing up from his chair pointing aggressively at the waiter. One hand is slamming a complaint form on the table. His hair is literally standing up from rage. Small angry symbols (💢) and fire emojis burst around his head. The table is shaking from his fury. Bold black outlines around everything. Background: angry red/pink (#FECACA). Shockwave lines radiating from his mouth.
+
+Card Layout:
+- Top: Card title "投訴王" in bold Chinese characters with small English subtitle "COMPLAINT KING" directly beneath (about 40% the title size), background light red
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom left: Required ingredients panel — clearly render all THREE required food icons with its Chinese name above and English name below in smaller text. Must show: 🍜 公仔麵 / Instant Noodles  +  🍳 煎蛋 / Fried Egg  +  🥩 叉燒 / Char Siu (BBQ Pork). Icons must be large, recognizable, labeled, and visually separated with "+" signs. Do NOT omit or abbreviate any ingredient.
+- Bottom right: Tip value "💰 小費 2 / Tip 2" + "🔥 催單 / Rushing" badge
+- Footer: smaller italic English line "Always furious — anger +1 each turn"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light red / rage red
+
+Dimensions: 63mm x 88mm (standard poker card size)
