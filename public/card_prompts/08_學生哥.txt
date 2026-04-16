@@ -1,0 +1,23 @@
+Card Name: 學生哥 (Student Boy)
+Category: 客人卡 (Customer Card)
+Requires: 公仔麵 (Instant Noodles) + 煎蛋 (Fried Egg)
+Tip: 1
+Quote: 「阿Sir，要個公仔麵加隻蛋，多謝！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon Hong Kong secondary school student boy, drawn in Exploding Kittens art style. He wears a classic white school uniform shirt and carries an oversized heavy backpack that's dragging him down. His face has big innocent puppy-dog eyes and a cheeky grin. He's holding up coins in one hand counting them carefully (because he's broke). One pocket is turned inside out showing emptiness. Bold black outlines around everything. Background: soft blue (#DBEAFE). A tiny coin with wings flying away from his wallet.
+
+Card Layout:
+- Top: Card title "學生哥" in bold Chinese characters with small English subtitle "STUDENT BOY" directly beneath (about 40% the title size), background light blue
+- Center: The illustration (main focus, ~60% of card area)
+- Bottom left: Required ingredients panel — clearly render each required food icon with its Chinese name above and English name below in smaller text. Must show: 🍜 公仔麵 / Instant Noodles  +  🍳 煎蛋 / Fried Egg. Icons must be large, recognizable, labeled, and visually separated with a "+" sign. Do NOT omit or abbreviate any ingredient.
+- Bottom right: Tip value "💰 小費 1 / Tip 1"
+- Footer text: "窮學生恩物" with a smaller italic English line "A broke student's best friend"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light blue / white
+
+Dimensions: 63mm x 88mm (standard poker card size)

@@ -1,0 +1,225 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html, body, #root { min-height: 100%; }
+
+body {
+  background: #FFF8EC;
+  font-family: 'Noto Sans TC', 'Poppins', sans-serif;
+  overflow-x: hidden;
+}
+
+/* ===== Top Nav (Exploding Kittens style, bright red) ===== */
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 200;
+  background: #E8302A;
+  border-bottom: 5px solid #1A1A2E;
+  box-shadow: 0 6px 0 #FFD93D, 0 10px 24px rgba(0,0,0,.18);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 28px;
+  gap: 18px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.top-nav::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 12% 30%, #F5A623 0%, transparent 42%),
+    radial-gradient(circle at 88% 70%, #FFD93D 0%, transparent 38%);
+  opacity: .28;
+  pointer-events: none;
+}
+
+.top-nav > * { position: relative; z-index: 1; }
+
+.top-nav .brand {
+  color: #fff;
+  font-weight: 900;
+  font-size: 1.3rem;
+  letter-spacing: .05em;
+  text-shadow: 3px 3px 0 rgba(0,0,0,.28);
+  text-transform: uppercase;
+  flex: 1 1 220px;
+  min-width: 0;
+  line-height: 1.2;
+  overflow-wrap: anywhere;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+  flex: 1 1 320px;
+  min-width: 0;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 12px;
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: #FFF8EC;
+  color: #1A1A2E;
+  border: 3px solid #1A1A2E;
+  border-radius: 50px;
+  padding: 10px 24px;
+  font-weight: 900;
+  font-size: .95rem;
+  cursor: pointer;
+  font-family: inherit;
+  box-shadow: 3px 3px 0 #1A1A2E;
+  transition: transform .15s, box-shadow .15s, background .15s;
+  text-transform: uppercase;
+  letter-spacing: .03em;
+  text-align: center;
+  line-height: 1.25;
+  white-space: normal;
+}
+.tab-btn:hover {
+  transform: translate(-1px, -2px);
+  box-shadow: 5px 5px 0 #1A1A2E;
+}
+.tab-btn.active {
+  background: #FFD93D;
+  color: #1A1A2E;
+  box-shadow: 4px 4px 0 #1A1A2E;
+}
+
+.print-btn,
+.lang-btn {
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-weight: 900;
+  font-size: .92rem;
+  cursor: pointer;
+  font-family: inherit;
+  transition: transform .15s, box-shadow .15s;
+  flex: 0 0 auto;
+}
+
+.print-btn {
+  background: #FFD93D;
+  color: #1A1A2E;
+  border: 3px solid #1A1A2E;
+  box-shadow: 3px 3px 0 #1A1A2E;
+}
+
+.lang-btn {
+  background: #1A1A2E;
+  color: #FFD93D;
+  border: 3px solid #FFD93D;
+  box-shadow: 3px 3px 0 #1A1A2E;
+}
+
+.print-btn:hover,
+.lang-btn:hover { transform: translate(-1px, -2px); box-shadow: 5px 5px 0 #1A1A2E; }
+
+.print-btn:active,
+.lang-btn:active { transform: translateY(1px); box-shadow: 2px 2px 0 #1A1A2E; }
+
+.top-nav.lang-en .brand {
+  font-size: 1.18rem;
+  letter-spacing: .02em;
+}
+
+/* Spacing so the page content breathes under the sticky nav */
+.page-rulebook,
+.page-cardlist {
+  padding-top: 8px;
+}
+
+@media (max-width: 700px) {
+  .top-nav {
+    padding: 14px 16px;
+    gap: 12px;
+    justify-content: center;
+  }
+  .top-nav .brand {
+    font-size: 1rem;
+    width: 100%;
+    text-align: center;
+    flex-basis: 100%;
+  }
+  .top-nav.lang-en .brand {
+    font-size: .94rem;
+  }
+  .tabs {
+    order: 2;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 10px;
+  }
+  .nav-actions {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+  }
+  .tab-btn {
+    min-width: 0;
+    padding: 10px 12px;
+    font-size: .84rem;
+  }
+  .print-btn,
+  .lang-btn {
+    padding: 8px 14px;
+    font-size: .82rem;
+    width: min(100%, 180px);
+  }
+}
+
+@media (max-width: 420px) {
+  .top-nav {
+    padding: 12px;
+  }
+  .top-nav .brand,
+  .top-nav.lang-en .brand {
+    font-size: .9rem;
+  }
+  .tabs {
+    grid-template-columns: 1fr;
+  }
+  .tab-btn,
+  .print-btn,
+  .lang-btn {
+    width: 100%;
+  }
+}
+
+@media print {
+  html, body, #root {
+    min-height: auto;
+    height: auto;
+    background: #fff !important;
+  }
+
+  body {
+    background: #fff !important;
+    font-size: 9.6pt;
+    line-height: 1.55;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+
+  .top-nav {
+    display: none !important;
+  }
+
+  .page-rulebook,
+  .page-cardlist {
+    padding-top: 0;
+    background: transparent !important;
+  }
+}

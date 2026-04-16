@@ -1,0 +1,23 @@
+Card Name: 老闆唔喺度 (Boss is Away)
+Category: 功能牌 (Action Card)
+Quantity: x2
+Type: 防禦型 / 行動階段
+Effect: 本回合查勤階段，你的空桌不會產生怒氣值
+Quote: 「老闆出咗去食飯，把握機會！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon scene of a cha chaan teng boss sneaking out the back door while his waiters party, drawn in Exploding Kittens art style. In the background, a bald chubby boss (老闆) with a mustache is tiptoeing out of a swinging door, only half his body visible, with a paper bag of food and a relieved face. In the foreground, two waiters are slacking off — one lying on a table with feet up playing on phone, the other doing a victory pose with a wide celebratory grin. A "關門營業" (closed) sign is being secretly placed. Bold black outlines around everything. Background: warm orange (#FED7AA). Party confetti and celebration sparkles around the waiters.
+
+Card Layout:
+- Top: Card title "老闆唔喺度" in bold Chinese characters with small English subtitle "BOSS IS AWAY" directly beneath (about 40% the title size), background light orange
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom: Effect box — "效果：本回合查勤階段，你的空桌不會產生怒氣值", followed by a smaller italic English line "This turn's inspection: your empty tables generate no anger"
+- Footer tags: "行動階段 / Action" + "防禦型 / Defense"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light orange / cheerful yellow
+
+Dimensions: 63mm x 88mm (standard poker card size)

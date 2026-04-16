@@ -1,0 +1,944 @@
+<!-- ==================== ICON SPRITE (hand-drawn line art) ==================== -->
+<svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+  <defs>
+    <symbol id="ico-chef" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M6 11c-1.6 0-3-1.4-3-3s1.4-3 3-3c.4-1.7 2-3 3.8-3 1.3 0 2.4.6 3.2 1.6C13.6 2.6 14.7 2 16 2c1.9 0 3.4 1.3 3.8 3 1.6 0 3 1.4 3 3s-1.4 3-3 3v6H6v-6z"/>
+      <path d="M6 17h12v3H6z"/>
+      <path d="M9 11v3M12 11v3M15 11v3"/>
+    </symbol>
+    <symbol id="ico-deck" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="3" y="6" width="11" height="15" rx="1"/>
+      <rect x="7" y="3" width="11" height="15" rx="1"/>
+      <path d="M11 9l3 3-3 3"/>
+    </symbol>
+    <symbol id="ico-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="9" cy="8" r="3"/>
+      <circle cx="17" cy="9" r="2.5"/>
+      <path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/>
+      <path d="M14 20c0-2.5 1.6-4.5 4-5"/>
+    </symbol>
+    <symbol id="ico-angry" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <path d="M8 10l2 1M16 10l-2 1"/>
+      <path d="M9 16c.8-1.2 1.8-1.8 3-1.8s2.2.6 3 1.8"/>
+      <path d="M5 5l2 1M19 5l-2 1"/>
+    </symbol>
+    <symbol id="ico-bowl" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 11h18a9 9 0 0 1-18 0z"/>
+      <path d="M2 11h20"/>
+      <path d="M9 6c0 1-1 1-1 2s1 1 1 2M14 5c0 1-1 1-1 2s1 1 1 2"/>
+    </symbol>
+    <symbol id="ico-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 6h16"/>
+      <path d="M9 6V4a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2"/>
+      <path d="M6 6l1 14a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2l1-14"/>
+      <path d="M10 11v6M14 11v6"/>
+    </symbol>
+    <symbol id="ico-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M13 2L4 14h7l-1 8 9-12h-7z"/>
+    </symbol>
+    <symbol id="ico-map" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/>
+      <path d="M9 4v16M15 6v16"/>
+    </symbol>
+    <symbol id="ico-clipboard" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="4" width="14" height="18" rx="1"/>
+      <rect x="9" y="2" width="6" height="4" rx="1"/>
+      <path d="M9 11h6M9 15h6M9 19h4"/>
+    </symbol>
+    <symbol id="ico-flame" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 2c1 4 5 5 5 10a5 5 0 0 1-10 0c0-2 1-3 2-4-1 3 1 4 2 4 0-3-1-5 1-10z"/>
+    </symbol>
+    <symbol id="ico-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="9"/>
+      <circle cx="12" cy="12" r="6"/>
+      <path d="M12 8v8M10 10h3a1.5 1.5 0 0 1 0 3h-2a1.5 1.5 0 0 0 0 3h3"/>
+    </symbol>
+    <symbol id="ico-box" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 7l9-4 9 4-9 4z"/>
+      <path d="M3 7v10l9 4M21 7v10l-9 4M12 11v10"/>
+    </symbol>
+  </defs>
+</svg>
+
+<!-- ==================== HERO ==================== -->
+<header class="hero">
+  <div class="stamp">
+    <span class="zh">茶記<br>認證</span>
+    <span class="en">CHA<br>CHAAN<br>APPROVED</span>
+  </div>
+  <div class="hero-inner">
+    <h1><span class="zh">茶餐廳風雲</span><span class="en">Cha Chaan Teng Showdown</span></h1>
+    <div class="subtitle"><span class="zh">生存大亂鬥</span><span class="en">Survival Brawl</span></div>
+    <p class="tagline">
+      <span class="zh">
+        午餐尖峰時段，客人源源不絕、要求千奇百怪。<br>
+        身為伙計的你，要在混亂中帶位、執單、上餐，<br>
+        還要提防同事暗中加料、推客、踢爆！<br>
+        <strong>撐到最後的人，才是茶餐廳生存之王。</strong>
+      </span>
+      <span class="en">
+        The lunch rush is on — customers pour in with endless quirky orders.<br>
+        As a server, you must seat, take orders and serve in the chaos,<br>
+        while watching out for coworkers sneaking in extra ingredients, dumping customers on you, and calling your bluffs!<br>
+        <strong>Last one standing is the King of the Cha Chaan Teng.</strong>
+      </span>
+    </p>
+    <div class="hero-badges">
+      <div class="badge"><span class="zh">3–5 人</span><span class="en">3–5 Players</span></div>
+      <div class="badge"><span class="zh">8 歲以上</span><span class="en">Age 8+</span></div>
+      <div class="badge"><span class="zh">20–30 分鐘</span><span class="en">20–30 min</span></div>
+      <div class="badge">V1.3</div>
+    </div>
+  </div>
+</header>
+
+<div class="wave">
+  <svg viewBox="0 0 1440 60" preserveAspectRatio="none">
+    <path d="M0,0 C360,60 1080,60 1440,0 L1440,60 L0,60 Z" fill="#FFF8EC"/>
+  </svg>
+</div>
+
+<main class="wrapper">
+
+  <!-- ==================== TABLE OF CONTENTS ==================== -->
+  <section class="toc" aria-labelledby="toc-title">
+    <div class="toc-header">
+      <h2 id="toc-title" class="toc-title">
+        <span class="zh">餐　牌</span>
+        <span class="en">MENU</span>
+      </h2>
+      <p class="toc-sub">
+        <span class="zh">目錄 · 今日供應</span>
+        <span class="en">Table of Contents · Today's Specials</span>
+      </p>
+    </div>
+    <ol class="toc-list">
+      <li><span class="toc-num">1</span><a href="#sec-objective"><span class="toc-name"><span class="zh">遊戲目標</span><span class="en">Objective</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-objective"></span></a></li>
+      <li><span class="toc-num">2</span><a href="#sec-components"><span class="toc-name"><span class="zh">遊戲配件</span><span class="en">Components</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-components"></span></a></li>
+      <li><span class="toc-num toc-num-star">★</span><a href="#sec-characters"><span class="toc-name"><span class="zh">角色卡</span><span class="en">Character Cards</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-characters"></span></a></li>
+      <li><span class="toc-num">3</span><a href="#sec-initial"><span class="toc-name"><span class="zh">初始設定</span><span class="en">Initial Values</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-initial"></span></a></li>
+      <li><span class="toc-num">4</span><a href="#sec-setup"><span class="toc-name"><span class="zh">遊戲設置</span><span class="en">Game Setup</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-setup"></span></a></li>
+      <li><span class="toc-num">5</span><a href="#sec-cards"><span class="toc-name"><span class="zh">卡牌類型說明</span><span class="en">Card Types</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-cards"></span></a></li>
+      <li><span class="toc-num">6</span><a href="#sec-flow"><span class="toc-name"><span class="zh">遊戲流程</span><span class="en">Turn Flow</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-flow"></span></a></li>
+      <li><span class="toc-num">7</span><a href="#sec-bluff"><span class="toc-name"><span class="zh">蓋牌吹牛規則</span><span class="en">Bluffing Rules</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-bluff"></span></a></li>
+      <li><span class="toc-num">8</span><a href="#sec-rush"><span class="toc-name"><span class="zh">午市大清算</span><span class="en">Lunch Rush</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-rush"></span></a></li>
+      <li><span class="toc-num">9</span><a href="#sec-glossary"><span class="toc-name"><span class="zh">名詞整理</span><span class="en">Glossary</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-glossary"></span></a></li>
+      <li><span class="toc-num toc-num-bang">!</span><a href="#sec-style"><span class="toc-name"><span class="zh">遊戲風格</span><span class="en">Game Style</span></span><span class="toc-dots"></span><span class="toc-page" data-target="sec-style"></span></a></li>
+    </ol>
+    <div class="toc-stamp" aria-hidden="true">
+      <span class="zh">今日<br>推介</span>
+      <span class="en">TODAY'S<br>PICK</span>
+    </div>
+  </section>
+
+  <!-- ==================== 1. OBJECTIVE ==================== -->
+  <section id="sec-objective">
+    <div class="section-header">
+      <div class="section-number">1</div>
+      <h2 class="section-title"><span class="zh">遊戲目標</span><span class="en">Objective</span></h2>
+    </div>
+    <div class="card">
+      <p>
+        <span class="zh">本遊戲採用<strong>生存淘汰制</strong>。管理你的桌位與手牌，完成客人的餐點需求，同時避免累積過多的<strong class="text-red">「老闆怒氣值」</strong>。</span>
+        <span class="en">This is a <strong>survival-elimination</strong> game. Manage your tables and hand, complete customer orders, and avoid accumulating too much <strong class="text-red">Boss Rage</strong>.</span>
+      </p>
+      <div class="highlight red">
+        <span class="zh">當你的怒氣值達到或超過上限 ── 你就被老闆即時開除！最後留在場上的玩家獲勝！</span>
+        <span class="en">When your Rage reaches or exceeds your limit — you are instantly FIRED by the boss! The last player remaining wins!</span>
+      </div>
+      <p class="mt">
+        <span class="zh">若中央牌庫先被抽完，則進入<strong>「午市大清算」</strong>，仍存活的玩家進行最終結算 ── 怒氣值最低者獲勝；若平手，小費最多者勝出。</span>
+        <span class="en">If the draw pile runs out first, the <strong>Lunch Rush Showdown</strong> begins — surviving players do a final reckoning: lowest Rage wins; ties broken by most Tips.</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 2. COMPONENTS ==================== -->
+  <section id="sec-components">
+    <div class="section-header">
+      <div class="section-number">2</div>
+      <h2 class="section-title"><span class="zh">遊戲配件</span><span class="en">Components</span></h2>
+    </div>
+    <p style="margin-bottom: 14px; font-size: .95rem; line-height: 1.65;">
+      <span class="zh">全套共 <strong>96 張遊戲卡 + 6 張角色卡</strong>，另含中央板、個人桌墊與標記。</span>
+      <span class="en">The full set includes <strong>96 game cards + 6 character cards</strong>, plus the central board, player mats and tokens.</span>
+    </p>
+    <div class="icon-grid">
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-chef"/></svg>
+        <div class="label"><span class="zh">角色卡 ×6</span><span class="en">Characters ×6</span></div>
+        <div class="desc"><span class="zh">6 位伙計角色，各有獨立三項數值、被動與主動技能（不進牌庫）</span><span class="en">6 servers, each with 3 stats, a passive and an active skill (not shuffled into deck)</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-deck"/></svg>
+        <div class="label"><span class="zh">中央牌庫</span><span class="en">Draw Pile</span></div>
+        <div class="desc"><span class="zh">96 張遊戲卡洗勻組成，供玩家抽牌</span><span class="en">96 shuffled game cards; players draw from here</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-users"/></svg>
+        <div class="label"><span class="zh">客人卡 ×16</span><span class="en">Customers ×16</span></div>
+        <div class="desc"><span class="zh">前來用餐的客人，需要 2 種指定食材</span><span class="en">Diners who each require 2 specific ingredients</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-angry"/></svg>
+        <div class="label"><span class="zh">奧客卡 ×8</span><span class="en">Karens ×8</span></div>
+        <div class="desc"><span class="zh">特殊客人，需要 3 種食材且附帶催單效果</span><span class="en">Difficult customers: 3 ingredients needed, plus a rush-order effect</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-bowl"/></svg>
+        <div class="label"><span class="zh">食材卡 ×42</span><span class="en">Ingredients ×42</span></div>
+        <div class="desc"><span class="zh">6 種食材，每種 7 張，用來完成客人需求</span><span class="en">6 ingredient types × 7 each; used to complete orders</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-trash"/></svg>
+        <div class="label"><span class="zh">垃圾卡 ×12</span><span class="en">Trash ×12</span></div>
+        <div class="desc"><span class="zh">無法正常上餐，常用於吹牛或陷害</span><span class="en">Can't serve — used for bluffing or sabotage</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-bolt"/></svg>
+        <div class="label"><span class="zh">功能牌 ×18</span><span class="en">Action Cards ×18</span></div>
+        <div class="desc"><span class="zh">強行帶位、暗中加料、老闆唔喺度、執枱神功、客滿</span><span class="en">Forced Seating, Secret Ingredient, Boss is Away, Table Swap, Full House</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-map"/></svg>
+        <div class="label"><span class="zh">中央板 ×1</span><span class="en">Board ×1</span></div>
+        <div class="desc"><span class="zh">A3 茶餐廳平面圖，含牌庫、棄牌、回合指示、規則卡、奧客排隊區</span><span class="en">A3 restaurant layout with draw, discard, turn tracker, rules card and Karen queue</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-clipboard"/></svg>
+        <div class="label"><span class="zh">個人桌墊 ×5</span><span class="en">Player Mats ×5</span></div>
+        <div class="desc"><span class="zh">A5 橫式，含角色插槽、怒氣軌、桌位、食材區、小費軌、手牌區</span><span class="en">A5 landscape: character slot, Rage track, tables, ingredient area, Tip track, hand area</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-flame"/></svg>
+        <div class="label"><span class="zh">怒氣值標記</span><span class="en">Rage Tokens</span></div>
+        <div class="desc"><span class="zh">記錄每位玩家的老闆怒氣值</span><span class="en">Tracks each player's Boss Rage</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-coin"/></svg>
+        <div class="label"><span class="zh">小費標記</span><span class="en">Tip Tokens</span></div>
+        <div class="desc"><span class="zh">完成上餐後獲得的獎勵</span><span class="en">Rewards earned from successful servings</span></div>
+      </div>
+      <div class="icon-item">
+        <svg class="ico"><use href="#ico-box"/></svg>
+        <div class="label"><span class="zh">遊戲外盒</span><span class="en">Game Box</span></div>
+        <div class="desc"><span class="zh">295mm 方盒，收納所有配件</span><span class="en">295mm square box fitting all components</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== CHARACTERS ==================== -->
+  <section id="sec-characters">
+    <div class="section-header">
+      <div class="section-number">★</div>
+      <h2 class="section-title"><span class="zh">角色卡</span><span class="en">Character Cards</span></h2>
+    </div>
+    <div class="card">
+      <p>
+        <span class="zh">遊戲開始前，玩家<strong>各自挑選 1 張角色卡</strong>，整場固定不變。每張角色卡包含三項數值，取代原本統一設定：</span>
+        <span class="en">Before the game begins, each player <strong>picks 1 character card</strong> and keeps it all game. Each card has three stats that override any default values:</span>
+      </p>
+      <ul class="mt">
+        <li>🔥 <strong><span class="zh">抗壓</span><span class="en">Stress</span></strong> — <span class="zh">怒氣值上限（預設 5 點，部分角色 4 或 6）</span><span class="en">Rage limit (default 5; some characters 4 or 6)</span></li>
+        <li>✋ <strong><span class="zh">手勢</span><span class="en">Hand</span></strong> — <span class="zh">手牌上限（預設 6 張，部分角色 7 張）</span><span class="en">Hand-size limit (default 6; some characters 7)</span></li>
+        <li>🪑 <strong><span class="zh">桌位</span><span class="en">Tables</span></strong> — <span class="zh">同時可接待客人數（預設 2 張，部分角色 1 或 3）</span><span class="en">Number of tables available (default 2; some 1 or 3)</span></li>
+      </ul>
+      <p class="mt">
+        <span class="zh">每張角色卡另有 <strong>1 個被動能力</strong>（常駐生效）與 <strong>1 個主動技能</strong>（每回合行動階段最多使用 1 次，不消耗行動權）。</span>
+        <span class="en">Each character also has <strong>1 passive ability</strong> (always active) and <strong>1 active skill</strong> (used at most once per Action phase, does not consume an action).</span>
+      </p>
+
+      <table class="rule-table" style="margin-top: 14px;">
+        <thead>
+        <tr>
+          <th><span class="zh">角色</span><span class="en">Character</span></th>
+          <th>🔥</th><th>✋</th><th>🪑</th>
+          <th><span class="zh">被動 / 主動技能</span><span class="en">Passive / Active</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong><span class="zh">新人伙計 阿志</span><span class="en">Rookie Server — Chi</span></strong></td><td>5</td><td>7</td><td>2</td>
+          <td>
+            <span class="zh"><strong>菜鳥運氣</strong>：首次被踢爆抓包時不罰怒氣<br><strong>見習生加油</strong>：抽牌階段多抽 1 張</span>
+            <span class="en"><strong>Beginner's Luck</strong>: the first time you're caught bluffing, no Rage penalty<br><strong>Trainee Hustle</strong>: draw 1 extra card in the draw phase</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">老練伙記 發哥</span><span class="en">Veteran Server — Fat Gor</span></strong></td><td>6</td><td>6</td><td>2</td>
+          <td>
+            <span class="zh"><strong>薑愈老愈辣</strong>：踢爆成功時對手額外 +1 怒氣<br><strong>老江湖</strong>：秘密查看對手 1 張手牌</span>
+            <span class="en"><strong>Old Ginger Bites Hardest</strong>: when you successfully call a bluff, the opponent takes +1 extra Rage<br><strong>Old Hand</strong>: secretly peek at 1 card from an opponent's hand</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">後廚大佬 肥威</span><span class="en">Head Cook — Fei Wai</span></strong></td><td>5</td><td>6</td><td>1</td>
+          <td>
+            <span class="zh"><strong>偷雞落鑊</strong>：上餐時可把 1 張垃圾當任意食材（每次限 1 次）<br><strong>落鑊</strong>：棄 2 張手牌，抽 3 張</span>
+            <span class="en"><strong>Into the Wok</strong>: when serving, 1 Trash card counts as any ingredient (once per serving)<br><strong>Fire the Wok</strong>: discard 2 cards, draw 3</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">收銀阿姐 蓮姐</span><span class="en">Cashier — Sister Lin</span></strong></td><td>5</td><td>6</td><td>2</td>
+          <td>
+            <span class="zh"><strong>老闆心水</strong>：花小費減怒氣變為 2 小費 = 1 怒氣<br><strong>埋單嘞</strong>：立刻獲得 1 小費</span>
+            <span class="en"><strong>Boss's Favorite</strong>: spending Tips to reduce Rage costs 2 Tips = −1 Rage<br><strong>Check, Please!</strong>: immediately gain 1 Tip</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">外賣仔 小強</span><span class="en">Delivery Boy — Siu Keung</span></strong></td><td>4</td><td>6</td><td>3</td>
+          <td>
+            <span class="zh"><strong>飛毛腿</strong>：查勤時空桌懲罰封頂為 2 點<br><strong>飛單</strong>：將自己桌上 1 位客人移到自己另一張空桌</span>
+            <span class="en"><strong>Light Feet</strong>: during Inspection, empty-table Rage is capped at 2<br><strong>Quick Shift</strong>: move 1 of your seated customers to another empty table of yours</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">樓面花 阿May</span><span class="en">Front-of-House — Ah May</span></strong></td><td>5</td><td>6</td><td>2</td>
+          <td>
+            <span class="zh"><strong>人見人愛</strong>：被強行帶位針對時立刻抽 1 張<br><strong>笑騎騎</strong>：指定 1 位對手，該對手至你下回合前不能對你用功能牌</span>
+            <span class="en"><strong>Crowd Favorite</strong>: when targeted by Forced Seating, immediately draw 1 card<br><strong>Sweet Smile</strong>: pick 1 opponent — they can't play action cards on you until your next turn</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==================== 3. INITIAL SETUP ==================== -->
+  <section id="sec-initial">
+    <div class="section-header">
+      <div class="section-number">3</div>
+      <h2 class="section-title"><span class="zh">初始設定</span><span class="en">Initial Values</span></h2>
+    </div>
+    <table class="rule-table">
+      <thead>
+      <tr>
+        <th><span class="zh">項目</span><span class="en">Item</span></th>
+        <th><span class="zh">數值</span><span class="en">Value</span></th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><span class="zh">起始手牌</span><span class="en">Starting Hand</span></td>
+        <td><strong><span class="zh">5 張</span><span class="en">5 cards</span></strong></td>
+      </tr>
+      <tr>
+        <td><span class="zh">每回合抽牌</span><span class="en">Draw per Turn</span></td>
+        <td><strong><span class="zh">2 張</span><span class="en">2 cards</span></strong></td>
+      </tr>
+      <tr>
+        <td><span class="zh">✋ 手牌上限（手勢）</span><span class="en">✋ Hand Limit</span></td>
+        <td><strong><span class="zh">依角色卡（預設 6 張，部分角色 7 張）</span><span class="en">Per character (default 6; some 7)</span></strong></td>
+      </tr>
+      <tr>
+        <td><span class="zh">🪑 桌位數量（桌位）</span><span class="en">🪑 Tables</span></td>
+        <td><strong><span class="zh">依角色卡（預設 2 張，部分角色 1 或 3 張）</span><span class="en">Per character (default 2; some 1 or 3)</span></strong></td>
+      </tr>
+      <tr>
+        <td><span class="zh">🔥 怒氣值上限（抗壓）</span><span class="en">🔥 Rage Limit</span></td>
+        <td><strong class="text-red"><span class="zh">依角色卡（預設 5 點，部分角色 4 或 6）</span><span class="en">Per character (default 5; some 4 or 6)</span></strong></td>
+      </tr>
+      </tbody>
+    </table>
+    <div class="highlight" style="margin-top: 14px;">
+      <span class="zh">這三項數值由所選角色卡決定，取代原本統一設定。開局前先挑角色！</span>
+      <span class="en">These three stats are set by your chosen character and override any defaults. Pick your character before you start!</span>
+    </div>
+  </section>
+
+  <!-- ==================== 4. SETUP ==================== -->
+  <section id="sec-setup">
+    <div class="section-header">
+      <div class="section-number">4</div>
+      <h2 class="section-title"><span class="zh">遊戲設置</span><span class="en">Game Setup</span></h2>
+    </div>
+    <div class="flow">
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">1</div><div class="flow-connector"></div></div>
+        <div class="flow-content">
+          <h4><span class="zh">挑選角色卡</span><span class="en">Choose Characters</span></h4>
+          <p>
+            <span class="zh">將 6 張角色卡攤開，玩家<strong>依序各自選 1 張</strong>放在自己面前（建議以年齡最小者優先選）。未被選的角色卡收回盒中。</span>
+            <span class="en">Lay out all 6 character cards. Each player in turn <strong>picks 1</strong> and places it in front of themselves (youngest chooses first). Unchosen cards go back in the box.</span>
+          </p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">2</div><div class="flow-connector"></div></div>
+        <div class="flow-content">
+          <h4><span class="zh">洗牌組庫</span><span class="en">Shuffle the Deck</span></h4>
+          <p>
+            <span class="zh">將 <strong>96 張</strong>遊戲卡（不含角色卡）洗勻，組成中央牌庫，放在中央板的牌庫區。</span>
+            <span class="en">Shuffle all <strong>96</strong> game cards (not the character cards) and place them on the draw-pile space of the central board.</span>
+          </p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">3</div><div class="flow-connector"></div></div>
+        <div class="flow-content">
+          <h4><span class="zh">拿取標記</span><span class="en">Take Tokens</span></h4>
+          <p>
+            <span class="zh">每位玩家拿取 1 組怒氣值標記，怒氣值從 <strong>0</strong> 開始，放在個人桌墊的怒氣軌上。</span>
+            <span class="en">Each player takes a Rage token, starting at <strong>0</strong>, placed on the Rage track of their mat.</span>
+          </p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">4</div><div class="flow-connector"></div></div>
+        <div class="flow-content">
+          <h4><span class="zh">擺設桌位</span><span class="en">Set Up Tables</span></h4>
+          <p>
+            <span class="zh">依照所選角色卡的 🪑 <strong>桌位</strong>數值，使用個人桌墊上對應數量的桌位接待客人。</span>
+            <span class="en">Use the number of tables indicated by your character's 🪑 <strong>Tables</strong> stat on your player mat.</span>
+          </p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">5</div><div class="flow-connector"></div></div>
+        <div class="flow-content">
+          <h4><span class="zh">抽取手牌</span><span class="en">Draw Starting Hand</span></h4>
+          <p>
+            <span class="zh">每位玩家從中央牌庫抽取 <strong>5 張手牌</strong>（手牌上限依角色 ✋ 手勢 而定）。</span>
+            <span class="en">Each player draws <strong>5 cards</strong> from the draw pile (hand limit per character's ✋ Hand stat).</span>
+          </p>
+        </div>
+      </div>
+      <div class="flow-step">
+        <div class="flow-line"><div class="flow-dot">6</div></div>
+        <div class="flow-content">
+          <h4><span class="zh">決定起始玩家</span><span class="en">Pick First Player</span></h4>
+          <p>
+            <span class="zh">隨機決定起始玩家，準備開工！</span>
+            <span class="en">Randomly pick the starting player — time to get to work!</span>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. CARD TYPES ==================== -->
+  <section id="sec-cards">
+    <div class="section-header">
+      <div class="section-number">5</div>
+      <h2 class="section-title"><span class="zh">卡牌類型說明</span><span class="en">Card Types</span></h2>
+    </div>
+
+    <div class="card">
+      <h3>
+        <span class="tag tag-blue"><span class="zh">客人卡</span><span class="en">Customer</span></span>
+        <span class="zh">前來用餐的客人（16 張）</span><span class="en">Diners (16 cards)</span>
+      </h3>
+      <p>
+        <span class="zh">將客人帶到自己面前的空桌。每位客人需要 <strong>2 種指定食材</strong>。完成需求後，客人與對應食材一同棄置，玩家獲得 <strong>1 小費</strong>獎勵。</span>
+        <span class="en">Seat a customer at one of your empty tables. Each customer requires <strong>2 specific ingredients</strong>. When served, discard the customer and the ingredients; gain <strong>1 Tip</strong>.</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>
+        <span class="tag tag-red"><span class="zh">奧客卡</span><span class="en">Karen</span></span>
+        <span class="zh">特殊難搞客人（8 張）</span><span class="en">Difficult customers (8 cards)</span>
+      </h3>
+      <p>
+        <span class="zh">奧客卡是特殊客人卡，需要 <strong>3 種指定食材</strong>，且全部附帶催單效果。完成可獲得 <strong>2–3 小費</strong>。</span>
+        <span class="en">Karens are special customers requiring <strong>3 specific ingredients</strong>, each with a rush-order effect. Completing one yields <strong>2–3 Tips</strong>.</span>
+      </p>
+      <div class="highlight red">
+        <span class="zh">催單效果：持有該客人的玩家，在回合結束時若該客人仍未完成上餐，立刻 <strong>+1 怒氣值</strong>！多位奧客效果可累加！</span>
+        <span class="en">Rush-order effect: at end of turn, if a Karen in front of you is unserved, take <strong>+1 Rage</strong> immediately! Effects from multiple Karens stack!</span>
+      </div>
+    </div>
+
+    <div class="card">
+      <h3>
+        <span class="tag tag-green"><span class="zh">食材卡</span><span class="en">Ingredient</span></span>
+        <span class="zh">完成餐點的關鍵</span><span class="en">Key to completing orders</span>
+      </h3>
+      <p>
+        <span class="zh">食材卡是完成客人需求的主要資源。收集正確的食材組合，才能為客人上餐。</span>
+        <span class="en">Ingredients are the core resource for fulfilling orders. Collect the right combination to serve your customers.</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>
+        <span class="tag tag-purple"><span class="zh">垃圾卡</span><span class="en">Trash</span></span>
+        <span class="zh">混淆視聽的道具</span><span class="en">Misdirection tools</span>
+      </h3>
+      <p>
+        <span class="zh">垃圾卡不能作為正確食材使用。它們常用於<strong>吹牛、蓋牌、陷害</strong>或干擾其他玩家。</span>
+        <span class="en">Trash cards cannot serve as valid ingredients. They are used for <strong>bluffing, face-down plays, sabotage</strong> and disrupting opponents.</span>
+      </p>
+    </div>
+
+    <div class="card">
+      <h3>
+        <span class="tag tag-orange"><span class="zh">功能牌</span><span class="en">Action Card</span></span>
+        <span class="zh">特殊效果（18 張）</span><span class="en">Special effects (18 cards)</span>
+      </h3>
+      <p>
+        <span class="zh">在指定時機使用，發動特殊效果，共 5 種：</span>
+        <span class="en">Played at specified times to trigger effects. 5 types:</span>
+      </p>
+      <ul>
+        <li><span class="zh"><strong>強行帶位 ×6</strong> ── 把客人塞到別人的空桌上</span><span class="en"><strong>Forced Seating ×6</strong> — seat a customer at an opponent's empty table</span></li>
+        <li><span class="zh"><strong>暗中加料 ×6</strong> ── 在別人上餐時偷偷加入一張牌</span><span class="en"><strong>Secret Ingredient ×6</strong> — sneak a card into another player's serving</span></li>
+        <li><span class="zh"><strong>老闆唔喺度 ×2</strong> ── 本回合查勤不計空桌怒氣</span><span class="en"><strong>Boss is Away ×2</strong> — skip empty-table Rage in this turn's Inspection</span></li>
+        <li><span class="zh"><strong>執枱神功 ×2</strong> ── 與對手互換桌上 1 位客人</span><span class="en"><strong>Table Swap ×2</strong> — swap 1 seated customer with an opponent</span></li>
+        <li><span class="zh"><strong>客滿 ×2</strong> ── 反制一次「強行帶位」</span><span class="en"><strong>Full House ×2</strong> — cancel one Forced Seating targeting you</span></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== 6. TURN FLOW ==================== -->
+  <section id="sec-flow">
+    <div class="section-header">
+      <div class="section-number">6</div>
+      <h2 class="section-title"><span class="zh">遊戲流程</span><span class="en">Turn Flow</span></h2>
+    </div>
+    <p style="margin-bottom: 18px; font-size: .95rem; line-height: 1.6;">
+      <span class="zh">遊戲以回合制進行，從起始玩家開始，依<strong>順時針</strong>輪流。每位玩家的回合依序分為以下階段：</span>
+      <span class="en">The game is turn-based, starting with the first player and proceeding <strong>clockwise</strong>. Each player's turn has these phases in order:</span>
+    </p>
+
+    <!-- 6-1 DRAW -->
+    <div class="card">
+      <h3><span class="zh">階段一：抽牌</span><span class="en">Phase 1 — Draw</span></h3>
+      <p><span class="zh">從中央牌庫抽 <strong>2 張</strong>牌加入手牌。</span><span class="en">Draw <strong>2 cards</strong> from the draw pile into your hand.</span></p>
+      <div class="highlight">
+        <span class="zh">若抽牌後手牌超過上限 6 張，必須立即棄牌至 6 張！</span>
+        <span class="en">If your hand exceeds the 6-card limit after drawing, discard down to 6 immediately!</span>
+      </div>
+    </div>
+
+    <!-- 6-2 ACTION -->
+    <div class="card">
+      <h3><span class="zh">階段二：行動（可重複執行）</span><span class="en">Phase 2 — Action (Repeatable)</span></h3>
+      <p>
+        <span class="zh">你可以自由重複執行以下行動，直到不想再行動或沒有合法行動為止：</span>
+        <span class="en">You may freely repeat the following actions until you choose to stop or have no legal action left:</span>
+      </p>
+
+      <table class="rule-table" style="margin-top: 14px;">
+        <thead>
+        <tr>
+          <th><span class="zh">行動</span><span class="en">Action</span></th>
+          <th><span class="zh">說明</span><span class="en">Description</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong><span class="zh">A. 帶位入座</span><span class="en">A. Seat a Customer</span></strong></td>
+          <td>
+            <span class="zh">將 1 張客人卡打出，放到自己的 1 張<strong>空桌</strong>上。沒有空桌就不能帶位。</span>
+            <span class="en">Play 1 customer card to one of your <strong>empty tables</strong>. You cannot seat if no table is free.</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">B. 湊套上餐</span><span class="en">B. Serve a Meal</span></strong></td>
+          <td>
+            <span class="zh">
+              手中已有某位客人需要的完整食材組合？宣告為該客人上餐！<br>
+              1. 指定 1 位自己桌上的客人<br>
+              2. 打出符合需求的食材牌<br>
+              3. 如有需要，可蓋 1 張牌作為百搭（每次上餐限蓋 1 張）<br>
+              4. 進入「上餐干擾與踢爆流程」
+            </span>
+            <span class="en">
+              Have the full ingredient set a customer needs? Declare a serving!<br>
+              1. Target 1 of your seated customers<br>
+              2. Play matching ingredient cards<br>
+              3. If needed, play 1 face-down card as a wild (max 1 per serving)<br>
+              4. Proceed to the "Interference &amp; Bluff-Catch" sequence
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">C. 使用功能牌</span><span class="en">C. Play an Action Card</span></strong></td>
+          <td>
+            <span class="zh">
+              <strong>強行帶位</strong>：將客人卡放到對手的空桌上<br>
+              <strong>暗中加料</strong>：不能單獨使用，須在其他玩家上餐時打出<br>
+              <strong>老闆唔喺度</strong>：本回合查勤不計空桌怒氣<br>
+              <strong>執枱神功</strong>：與對手互換桌上 1 位客人<br>
+              <strong>客滿</strong>（反應型）：取消一次對你的強行帶位
+            </span>
+            <span class="en">
+              <strong>Forced Seating</strong>: place a customer at an opponent's empty table<br>
+              <strong>Secret Ingredient</strong>: can only be played during another player's serving<br>
+              <strong>Boss is Away</strong>: skip empty-table Rage during this Inspection<br>
+              <strong>Table Swap</strong>: exchange 1 seated customer with an opponent<br>
+              <strong>Full House</strong> (reaction): cancel one Forced Seating against you
+            </span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">D. 主動反檯</span><span class="en">D. Flip the Table</span></strong></td>
+          <td>
+            <span class="zh">不想處理某位客人？宣告「反檯」，棄置該客人、清空桌位，但<strong class="text-red">立刻 +1 怒氣值</strong>。</span>
+            <span class="en">Don't want a customer? Declare "Flip the Table" — discard that customer and clear the table, but take <strong class="text-red">+1 Rage</strong> immediately.</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">E. 花費小費</span><span class="en">E. Spend Tips</span></strong></td>
+          <td>
+            <span class="zh">花費 <strong>3 小費</strong>減少 <strong>1 點</strong>老闆怒氣值。每回合最多 1 次。（收銀阿姐 蓮姐被動：2 小費 = 1 怒氣。）</span>
+            <span class="en">Spend <strong>3 Tips</strong> to reduce Boss Rage by <strong>1</strong>. Max once per turn. (Sister Lin's passive: 2 Tips = −1 Rage.)</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">C+. 發動主動技能</span><span class="en">C+. Use Active Skill</span></strong></td>
+          <td>
+            <span class="zh">每回合行動階段中，可發動自己角色卡上的主動技能 <strong>最多 1 次</strong>，<strong>不消耗行動權</strong>。部分技能指定於其他階段發動，以卡面為準。</span>
+            <span class="en">Use your character's active skill <strong>at most once</strong> during the Action phase, <strong>without consuming an action</strong>. Some skills must be used in other phases — follow the card text.</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- 6-3 BLUFF CATCH -->
+    <div class="card">
+      <h3><span class="zh">階段三：上餐干擾與踢爆流程</span><span class="en">Phase 3 — Interference &amp; Bluff-Catch</span></h3>
+      <p><span class="zh">當任一玩家宣告「上餐」時，立刻進入以下流程：</span><span class="en">Whenever a player declares a serving, immediately run this sequence:</span></p>
+
+      <div class="flow" style="margin-top: 16px;">
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--pink);">1</div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <h4><span class="zh">暗中加料</span><span class="en">Secret Ingredients</span></h4>
+            <p>
+              <span class="zh">由當前回合玩家<strong>左手邊開始</strong>，依順時針順序，其他玩家可各自選擇是否打出<strong>最多 1 張</strong>「暗中加料」。所有加料牌必須一併納入本次餐點檢查。</span>
+              <span class="en">Starting <strong>left</strong> of the current player and going clockwise, each other player may play <strong>up to 1</strong> Secret Ingredient. All added cards must be included when checking the meal.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--pink);">2</div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <h4><span class="zh">踢爆窗口</span><span class="en">Call-Out Window</span></h4>
+            <p>
+              <span class="zh">只要本次上餐出現任何<strong>蓋牌</strong>，且效果尚未正式生效，立即開啟踢爆窗口。由左手邊開始，依順時針順序，每位玩家各有一次機會決定是否喊出：</span>
+              <span class="en">If the serving includes any <strong>face-down card</strong> whose effect hasn't resolved yet, the call-out window opens. Starting left and going clockwise, each player gets one chance to shout:</span>
+            </p>
+            <div class="highlight pink" style="text-align: center; font-size: 1.3rem; letter-spacing: .1em;">
+              <span class="zh">「你跣我！」</span><span class="en">"You tricked me!"</span>
+            </div>
+            <p>
+              <span class="zh">踢爆者必須<strong>指定 1 張蓋牌</strong>翻開。一旦有人踢爆，立刻翻開被指定的蓋牌並結算。每次上餐最多翻 1 張。</span>
+              <span class="en">The caller must <strong>pick 1 face-down card</strong> to reveal. Once a call is made, reveal the named card and resolve. Max 1 reveal per serving.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--pink);">3</div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <h4><span class="zh">踢爆結算</span><span class="en">Resolve the Call</span></h4>
+            <div class="versus">
+              <div class="versus-box fail">
+                <h4><span class="zh">抓包成功</span><span class="en">Bluff Caught</span></h4>
+                <p>
+                  <span class="zh">翻開的是垃圾、錯誤食材或無效牌 ── <strong>出牌者 +1 怒氣</strong>，該牌無效。</span>
+                  <span class="en">The revealed card is trash, a wrong ingredient, or invalid — <strong>the player who placed it takes +1 Rage</strong>; the card is void.</span>
+                </p>
+              </div>
+              <div class="versus-box success">
+                <h4><span class="zh">抓錯了！</span><span class="en">Wrong Call!</span></h4>
+                <p>
+                  <span class="zh">翻開的牌符合宣稱 ── <strong>踢爆者 +1 怒氣</strong>，該牌正常生效。</span>
+                  <span class="en">The revealed card matches the claim — <strong>the caller takes +1 Rage</strong>; the card resolves normally.</span>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--pink);">4</div></div>
+          <div class="flow-content">
+            <h4><span class="zh">完成上餐</span><span class="en">Finish the Serving</span></h4>
+            <p>
+              <span class="zh">若最終餐點符合客人需求 ── <span class="tag tag-green">上餐成功</span> 棄牌、得小費、清空桌位。</span>
+              <span class="en">If the final meal meets the customer's needs — <span class="tag tag-green">Success</span> discard cards, gain Tips, clear the table.</span>
+            </p>
+            <p>
+              <span class="zh">若不符合需求 ── <span class="tag tag-red">上餐失敗</span> 無效牌棄置，其餘合法食材退回手牌，客人留在桌上。</span>
+              <span class="en">If not — <span class="tag tag-red">Failure</span> discard invalid cards, return remaining valid ingredients to hand, customer stays at the table.</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 6-4 INSPECTION -->
+    <div class="card">
+      <h3><span class="zh">階段三：查勤</span><span class="en">Phase 4 — Inspection</span></h3>
+      <div class="highlight green" style="margin-bottom: 12px;">
+        <span class="zh">每位玩家的第一個回合跳過此階段！</span>
+        <span class="en">Skip this phase on each player's first turn!</span>
+      </div>
+      <p><span class="zh">回合結束時，檢查你面前的 2 張桌位：</span><span class="en">At the end of your turn, check your tables:</span></p>
+      <div class="highlight red" style="text-align: center; font-size: 1.1rem;">
+        <span class="zh">每有 1 張空桌 ➜ 立刻 +1 老闆怒氣值！<br>2 張空桌 = +2 怒氣！</span>
+        <span class="en">Each empty table ➜ +1 Boss Rage immediately!<br>2 empty tables = +2 Rage!</span>
+      </div>
+      <p style="margin-top: 10px; font-size: .92rem;">
+        <span class="zh">若本回合已使用「老闆唔喺度」，則本次查勤不產生怒氣。</span>
+        <span class="en">If you played "Boss is Away" this turn, Inspection generates no Rage.</span>
+      </p>
+    </div>
+
+    <!-- 6-5 KAREN -->
+    <div class="card">
+      <h3><span class="zh">階段四：奧客結算</span><span class="en">Phase 5 — Karen Resolution</span></h3>
+      <p>
+        <span class="zh">完成查勤後，檢查桌上所有尚未完成的客人。每位具有「回合結束時 +1 怒氣」效果的奧客，若此時仍未完成上餐，便各自結算一次效果。</span>
+        <span class="en">After Inspection, check unserved customers at your tables. Each Karen with an "end-of-turn +1 Rage" effect triggers once if still unserved.</span>
+      </p>
+      <div class="highlight red">
+        <span class="zh">同時有 2 位催單奧客？那就 +2 怒氣值！</span>
+        <span class="en">Two rush-order Karens at once? That's +2 Rage!</span>
+      </div>
+    </div>
+
+    <!-- INSTANT ELIMINATION -->
+    <div class="card">
+      <h3><span class="zh">即時淘汰（貫穿全程）</span><span class="en">Instant Elimination (Always Active)</span></h3>
+      <div class="highlight red" style="text-align: center; font-size: 1.1rem;">
+        <span class="zh">無論任何階段，怒氣值達到角色卡 🔥 抗壓 數值（預設 5 點） ➜ 立刻被老闆開除！</span>
+        <span class="en">In any phase, if Rage reaches your character's 🔥 Stress value (default 5) ➜ you're instantly FIRED!</span>
+      </div>
+      <ul class="mt">
+        <li><span class="zh">所有手牌放入棄牌區</span><span class="en">Discard your entire hand</span></li>
+        <li><span class="zh">棄置桌上所有客人與餐點</span><span class="en">Discard all customers and meal cards at your tables</span></li>
+        <li><span class="zh">不再參與後續回合</span><span class="en">Take no further turns</span></li>
+        <li><span class="zh">其桌位不再作為可互動區域</span><span class="en">Your tables are no longer an interactable area</span></li>
+      </ul>
+      <div class="highlight green" style="text-align: center; margin-top: 14px;">
+        <span class="zh">場上只剩最後 1 名玩家 ➜ 該玩家立刻獲勝！</span>
+        <span class="en">When only 1 player remains ➜ they immediately WIN!</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. BLUFFING ==================== -->
+  <section id="sec-bluff">
+    <div class="section-header">
+      <div class="section-number">7</div>
+      <h2 class="section-title"><span class="zh">蓋牌吹牛規則</span><span class="en">Face-Down &amp; Bluffing Rules</span></h2>
+    </div>
+    <div class="card">
+      <p>
+        <span class="zh">在本遊戲中，玩家可以用<strong>蓋牌</strong>進行欺騙！</span>
+        <span class="en">In this game, players can deceive each other using <strong>face-down cards</strong>!</span>
+      </p>
+      <table class="rule-table" style="margin-top: 14px;">
+        <thead>
+        <tr>
+          <th><span class="zh">類型</span><span class="en">Type</span></th>
+          <th><span class="zh">說明</span><span class="en">Description</span></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td><strong><span class="zh">百搭蓋牌</span><span class="en">Wild Face-Down</span></strong></td>
+          <td>
+            <span class="zh">上餐時缺少某個食材？可以將手牌中任意 1 張牌<strong>面朝下</strong>打出，宣稱它是你所需的食材。<strong>每次上餐最多只能蓋 1 張百搭。</strong></span>
+            <span class="en">Missing an ingredient while serving? Play any 1 card <strong>face down</strong> and claim it is that ingredient. <strong>Max 1 wild face-down per serving.</strong></span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">暗中加料蓋牌</span><span class="en">Secret Ingredient Face-Down</span></strong></td>
+          <td>
+            <span class="zh">其他玩家透過「暗中加料」，將 1 張牌面朝下加入你的餐點，宣稱是某種食材或附加內容。</span>
+            <span class="en">Another player uses Secret Ingredient to add 1 face-down card to your serving, claiming it's a certain ingredient or effect.</span>
+          </td>
+        </tr>
+        <tr>
+          <td><strong><span class="zh">踢爆檢查</span><span class="en">Call-Out Check</span></strong></td>
+          <td>
+            <span class="zh">所有蓋牌在正式生效前，都可能被其他玩家質疑。踢爆者須<strong>指定 1 張蓋牌</strong>翻開，每次上餐最多翻 1 張。</span>
+            <span class="en">Any face-down card may be challenged before it resolves. The caller must <strong>name 1 face-down card</strong> to reveal; max 1 reveal per serving.</span>
+          </td>
+        </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ==================== 8. LUNCH RUSH ==================== -->
+  <section id="sec-rush">
+    <div class="section-header">
+      <div class="section-number">8</div>
+      <h2 class="section-title"><span class="zh">午市大清算</span><span class="en">Lunch Rush Showdown</span></h2>
+    </div>
+    <div class="card">
+      <p>
+        <span class="zh">當中央牌庫被抽完的瞬間，代表<strong>午市結束</strong>，遊戲立刻停止！</span>
+        <span class="en">The moment the draw pile is empty, <strong>lunch is over</strong> — the game stops immediately!</span>
+      </p>
+
+      <div class="flow" style="margin-top: 16px;">
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--red); color: #fff;">1</div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <h4><span class="zh">未完成客人懲罰</span><span class="en">Unserved Customer Penalty</span></h4>
+            <p><span class="zh">每有 1 位未完成客人 ➜ <strong>+1 怒氣值</strong></span><span class="en">Each unserved customer ➜ <strong>+1 Rage</strong></span></p>
+            <p><span class="zh">若該客人是奧客 ➜ <strong class="text-red">+2 怒氣值</strong></span><span class="en">If it's a Karen ➜ <strong class="text-red">+2 Rage</strong></span></p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--red); color: #fff;">2</div><div class="flow-connector"></div></div>
+          <div class="flow-content">
+            <h4><span class="zh">淘汰檢查</span><span class="en">Elimination Check</span></h4>
+            <p>
+              <span class="zh">若有玩家因此怒氣值達到或超過上限，立刻淘汰。</span>
+              <span class="en">Any player whose Rage now meets or exceeds their limit is immediately eliminated.</span>
+            </p>
+          </div>
+        </div>
+        <div class="flow-step">
+          <div class="flow-line"><div class="flow-dot" style="background: var(--red); color: #fff;">3</div></div>
+          <div class="flow-content">
+            <h4><span class="zh">比較勝負</span><span class="en">Determine the Winner</span></h4>
+            <ol>
+              <li><span class="zh">怒氣值最低者獲勝</span><span class="en">Lowest Rage wins</span></li>
+              <li><span class="zh">若平手，小費最多者獲勝</span><span class="en">Tie: most Tips wins</span></li>
+              <li><span class="zh">若仍平手，共享勝利</span><span class="en">Still tied: shared victory</span></li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 9. GLOSSARY ==================== -->
+  <section id="sec-glossary">
+    <div class="section-header">
+      <div class="section-number">9</div>
+      <h2 class="section-title"><span class="zh">名詞整理</span><span class="en">Glossary</span></h2>
+    </div>
+    <div class="glossary-grid">
+      <div class="glossary-item">
+        <div class="term">🔥 <span class="zh">老闆怒氣值</span><span class="en">Boss Rage</span></div>
+        <div class="def">
+          <span class="zh">代表你目前承受的壓力與失誤程度。越高越接近被淘汰！</span>
+          <span class="en">Your current stress and accumulated mistakes. The higher, the closer to being fired!</span>
+        </div>
+      </div>
+      <div class="glossary-item">
+        <div class="term">💰 <span class="zh">小費</span><span class="en">Tips</span></div>
+        <div class="def">
+          <span class="zh">完成客人訂單後獲得的獎勵。可花 3 小費減 1 怒氣，也用於最終平手比較。</span>
+          <span class="en">Reward for completing orders. Spend 3 Tips to remove 1 Rage; also used as a tiebreaker.</span>
+        </div>
+      </div>
+      <div class="glossary-item">
+        <div class="term">🪑 <span class="zh">空桌</span><span class="en">Empty Table</span></div>
+        <div class="def">
+          <span class="zh">沒有客人的桌位。回合結束時，空桌會造成怒氣懲罰。</span>
+          <span class="en">A table with no customer. At end of turn, empty tables trigger Rage penalties.</span>
+        </div>
+      </div>
+      <div class="glossary-item">
+        <div class="term">🫳 <span class="zh">反檯</span><span class="en">Flip the Table</span></div>
+        <div class="def">
+          <span class="zh">主動放棄某位客人，立刻清空該桌，但自己要承受怒氣代價。</span>
+          <span class="en">Voluntarily drop a customer: clear the table immediately but pay a Rage cost.</span>
+        </div>
+      </div>
+      <div class="glossary-item">
+        <div class="term">👀 <span class="zh">踢爆</span><span class="en">Call Out</span></div>
+        <div class="def">
+          <span class="zh">對蓋牌內容提出質疑，指定 1 張蓋牌翻開檢查。</span>
+          <span class="en">Challenge a face-down card — name 1 face-down card to be revealed.</span>
+        </div>
+      </div>
+      <div class="glossary-item">
+        <div class="term">🚫 <span class="zh">客滿</span><span class="en">Full House</span></div>
+        <div class="def">
+          <span class="zh">反制牌，可取消一次對你的「強行帶位」。</span>
+          <span class="en">Reaction card — cancels one Forced Seating targeting you.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== QUICK REFERENCE ==================== -->
+  <div class="quick-ref">
+    <h2><span class="zh">每回合速查表</span><span class="en">Turn Quick Reference</span></h2>
+    <div class="qr-grid">
+      <div class="qr-item">
+        <div class="step"><span class="zh">步驟 1</span><span class="en">Step 1</span></div>
+        <div class="action"><span class="zh">抽牌</span><span class="en">Draw</span></div>
+        <div class="detail"><span class="zh">抽 2 張<br>超過 6 張須棄牌</span><span class="en">Draw 2<br>discard down to 6</span></div>
+      </div>
+      <div class="qr-item">
+        <div class="step"><span class="zh">步驟 2</span><span class="en">Step 2</span></div>
+        <div class="action"><span class="zh">行動</span><span class="en">Action</span></div>
+        <div class="detail"><span class="zh">帶位 / 上餐 / 功能牌 / 反檯 / 花小費</span><span class="en">Seat / Serve / Action / Flip / Tips</span></div>
+      </div>
+      <div class="qr-item">
+        <div class="step"><span class="zh">步驟 3</span><span class="en">Step 3</span></div>
+        <div class="action"><span class="zh">查勤</span><span class="en">Inspection</span></div>
+        <div class="detail"><span class="zh">每張空桌 +1 怒氣<br>（首回合跳過）</span><span class="en">+1 Rage per empty table<br>(skip first turn)</span></div>
+      </div>
+      <div class="qr-item">
+        <div class="step"><span class="zh">步驟 4</span><span class="en">Step 4</span></div>
+        <div class="action"><span class="zh">奧客結算</span><span class="en">Karen Check</span></div>
+        <div class="detail"><span class="zh">催單奧客各 +1 怒氣</span><span class="en">+1 Rage per rush-order Karen</span></div>
+      </div>
+      <div class="qr-item" style="border: 2px solid rgba(255,255,255,.4);">
+        <div class="step" style="color: #FF6B6B;"><span class="zh">全程生效</span><span class="en">Always On</span></div>
+        <div class="action"><span class="zh">即時淘汰</span><span class="en">Instant Out</span></div>
+        <div class="detail"><span class="zh">怒氣 ≥ 抗壓上限 立刻出局！</span><span class="en">Rage ≥ Stress = eliminated!</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ==================== STYLE ==================== -->
+  <section id="sec-style">
+    <div class="section-header">
+      <div class="section-number">!</div>
+      <h2 class="section-title"><span class="zh">遊戲風格</span><span class="en">Game Style</span></h2>
+    </div>
+    <div class="card" style="text-align: center;">
+      <p style="font-size: 1.1rem; font-weight: 700; margin-bottom: 10px;">
+        <span class="zh">這是一款強調……</span><span class="en">This game emphasizes…</span>
+      </p>
+      <div style="display: flex; justify-content: center; gap: 10px; flex-wrap: wrap;">
+        <span class="tag tag-red" style="font-size: 1rem; padding: 6px 18px;"><span class="zh">高互動</span><span class="en">High Interaction</span></span>
+        <span class="tag tag-orange" style="font-size: 1rem; padding: 6px 18px;"><span class="zh">高壓力</span><span class="en">High Pressure</span></span>
+        <span class="tag tag-purple" style="font-size: 1rem; padding: 6px 18px;"><span class="zh">高嘴砲</span><span class="en">High Trash Talk</span></span>
+        <span class="tag tag-pink" style="font-size: 1rem; padding: 6px 18px;"><span class="zh">高陷害</span><span class="en">High Sabotage</span></span>
+      </div>
+      <p style="margin-top: 16px; font-size: .95rem; line-height: 1.7;">
+        <span class="zh">
+          的輕中度派對卡牌遊戲。<br>
+          你不只是在管理自己的桌面，更是在混亂中判斷：<br><br>
+          何時上餐最安全？何時該踢爆別人？<br>
+          何時該故意說謊？何時該反檯止損？<br>
+          <strong>何時該把麻煩客人推給別人？</strong>
+        </span>
+        <span class="en">
+          — a light-to-medium party card game.<br>
+          You're not just managing your own tables; you're reading the chaos:<br><br>
+          When is it safest to serve? When should you call a bluff?<br>
+          When to lie on purpose? When to flip the table to cut losses?<br>
+          <strong>When to dump the worst customer on someone else?</strong>
+        </span>
+      </p>
+    </div>
+  </section>
+
+  <div class="footer">
+    <p>
+      <strong><span class="zh">《茶餐廳風雲：生存大亂鬥》</span><span class="en">Cha Chaan Teng Showdown: Survival Brawl</span></strong> V1.3
+    </p>
+    <p style="margin-top: 6px;">
+      <span class="zh">祝你生存愉快，唔好俾老闆炒！</span>
+      <span class="en">Good luck surviving — don't get fired by the boss!</span>
+    </p>
+  </div>
+
+</main>

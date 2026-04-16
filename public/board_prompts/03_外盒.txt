@@ -1,0 +1,74 @@
+Component Name: 遊戲外盒 (Game Outer Box)
+Category: 包裝 (Packaging)
+Quantity: x1
+Dimensions: 295mm x 295mm x 70mm (standard square board game box, fits A3-folded board)
+
+---
+
+Theme: Chaotic cha chaan teng lunch rush captured in a single hero illustration on the lid. The back and sides of the box give players a feel for the game at a glance — characters, chaos, and the core hook (survival + lying + sabotage).
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel. Hero-shot composition on the lid.
+
+---
+
+=== LID TOP (蓋面) ===
+
+Prompt:
+A chaotic hero-shot illustration of a Hong Kong cha chaan teng at peak lunch hour, drawn in Exploding Kittens art style. The scene is packed and loud. In the foreground, the six playable characters are all visible simultaneously doing absurd things: the Rookie Waiter (阿志) is in the middle panicking with a tray of milk teas tilting dangerously; the Veteran (發哥) is off to one side smirking with a pencil behind his ear; the Kitchen Boss (肥威) is behind a pass-through window with flames shooting from his wok; the Cashier Auntie (蓮姐) is at a counter in the back-right holding a stack of cash; the Delivery Boy (小強) is running out the left side with a tower of takeaway boxes; the Floor Star (阿May) is winking while balancing plates. Angry customers at tables are banging chopsticks, a food critic is scribbling on a notebook, a KOL is live-streaming. Food flies through the air — pineapple buns, egg tarts, bowls of noodles, cups of milk tea splashing. Bold black outlines, vibrant flat colors (dominant reds, yellows, teals, cream). Lots of speed lines, sweat drops, exclamation marks, and cartoon panic symbols.
+
+Title Treatment:
+- Main title: "茶餐廳風雲" in huge bold handwritten-style Chinese calligraphy across the top, with thick black outline and dripping red color (like soy sauce or chili oil)
+- English subtitle below: "CHA CHAAN TENG BRAWL" in bold condensed block letters
+- Tagline: "午市生存大亂鬥 — 3-5 players · 8+ · 20-30 min"
+- Small player count / age / time icons in the bottom corners
+
+---
+
+=== LID BACK (蓋底 / 背面) ===
+
+Prompt:
+A layout showing the back of the box with three horizontal strips of content drawn in Exploding Kittens style:
+
+Strip 1 — "你係邊個伙計?" (Who's Your Waiter?)
+Six small circular character portraits in a row, each labeled with name and one-line quirk:
+- 新人伙計 阿志 — "手牌+1，第一次被踢爆免罰"
+- 老練伙記 發哥 — "抗壓 6，踢爆成功對手 +2 怒氣"
+- 後廚大佬 肥威 — "只有 1 桌，但垃圾可當食材"
+- 收銀阿姐 蓮姐 — "小費換怒氣 2:1"
+- 外賣仔 小強 — "3 桌位，空桌懲罰封頂"
+- 樓面花 阿May — "被針對時抽牌補償"
+
+Strip 2 — "遊戲點玩?" (How to Play?)
+Three comic panels showing:
+Panel A: a player puts down ingredient cards and shouts "上餐!" with a sneaky face-down card hidden in the stack
+Panel B: an opponent points aggressively and shouts "你跣我!" (You tricked me!)
+Panel C: the face-down card is flipped, revealing a cockroach leg (垃圾卡), and the first player's boss-anger meter jumps up with steam coming out of his ears
+
+Strip 3 — "盒內配件" (What's Inside?)
+Small icons with quantities:
+- 96 張遊戲卡牌 (客人 16 / 奧客 8 / 食材 42 / 垃圾 12 / 功能 18)
+- 6 張角色卡
+- 1 張中央板
+- 5 張個人桌墊
+- 怒氣值標記 × 30
+- 小費標記 × 30
+- 規則書 × 1
+
+Bottom of back: barcode placeholder, publisher logo placeholder, "Designed by GE4102 Group [X], CityUHK".
+
+---
+
+=== BOX SIDES (盒側) ===
+
+All four sides show a repeating horizontal strip of the game title "茶餐廳風雲 · CHA CHAAN TENG BRAWL" in bold condensed type on a red background with small icons of food items (milk tea cup, pineapple bun, egg tart, wok) scattered between the words. Spine should be readable when the box stands on a shelf.
+
+---
+
+Color Theme: dominant cha chaan teng red (#DC2626) with cream (#FEF3C7), teal (#0F766E), and mustard yellow (#F59E0B) accents. Matches the central board and player mats.
+
+Printing Notes:
+- Lid art: full bleed 3mm all sides, CMYK
+- Matte finish on lid with spot UV on the title calligraphy for premium feel
+- Box base: solid red with small tiled food icon pattern
+- Box material: 1.5mm greyboard wrapped in printed art paper
+- Includes internal cardboard insert tray to hold: card deck wells, token trays, board slot, mat slot

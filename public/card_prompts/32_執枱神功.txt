@@ -1,0 +1,23 @@
+Card Name: 執枱神功 (Table Clearing Kung Fu)
+Category: 功能牌 (Action Card)
+Quantity: x2
+Type: 策略型 / 行動階段
+Effect: 將自己桌上 1 位客人與任一對手桌上的 1 位客人互換
+Quote: 「客人你坐錯位啦，呢邊請！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon martial arts master waiter performing ridiculous kung fu moves while swapping two customers between tables, drawn in Exploding Kittens art style. The waiter is in a dramatic kung fu stance with a bandana and apron, eyes glowing with power. His hands are moving so fast they blur, picking up two customers from different tables and switching them mid-air. The two customers are flying through the air with confused expressions, arms flailing, their dishes also swapping. Classic kung fu action lines and impact stars. Bold black outlines around everything. Background: warm orange (#FED7AA). A large swap arrow symbol "⇄" behind the scene.
+
+Card Layout:
+- Top: Card title "執枱神功" in bold Chinese characters with small English subtitle "TABLE-CLEARING KUNG FU" directly beneath (about 40% the title size), background light orange
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom: Effect box — "效果：將自己桌上 1 位客人與任一對手桌上的 1 位客人互換", followed by a smaller italic English line "Swap 1 customer on your table with 1 on any opponent's table"
+- Footer tags: "行動階段 / Action" + "策略型 / Strategy"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light orange / kung fu red
+
+Dimensions: 63mm x 88mm (standard poker card size)

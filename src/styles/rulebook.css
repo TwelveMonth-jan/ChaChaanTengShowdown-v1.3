@@ -1,0 +1,1412 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&family=Noto+Serif+TC:wght@700;900&family=ZCOOL+KuaiLe&family=Ma+Shan+Zheng&family=Rubik+Mono+One&family=Bebas+Neue&family=Caveat:wght@700&family=Inter:wght@400;700;900&display=swap');
+
+  :root {
+    /* Cha chaan teng primary palette */
+    --red:    #C8322C;  /* 招牌紅 — 比原本沉一點，列印更像印刷 */
+    --yellow: #F5C518;  /* 菠蘿油黃 */
+    --cream:  #FBF3DC;  /* 舊紙色 */
+    --dark:   #1A1A1A;  /* 墨黑 */
+
+    /* Cha chaan teng secondary palette */
+    --jade:   #0F5F4D;  /* 舊膠片餐牌深墨綠 */
+    --pink:   #FFD1DC;  /* 落單紙粉 */
+    --paper:  #FFF9B0;  /* 落單紙黃 */
+    --stamp:  #A91B0D;  /* 招牌印章暗紅 */
+
+    /* Retained accents (low usage) */
+    --orange: #F5A623;
+    --green:  #2ECC71;
+    --blue:   #3B82F6;
+    --purple: #8B5CF6;
+
+    /* Font role variables */
+    --font-display: 'ZCOOL KuaiLe', 'Rubik Mono One', cursive;
+    --font-heading: 'Noto Serif TC', 'Bebas Neue', serif;
+    --font-hand:    'Ma Shan Zheng', 'Caveat', cursive;
+    --font-body:    'Noto Sans TC', 'Inter', sans-serif;
+  } .page-rulebook *{ margin: 0; padding: 0; box-sizing: border-box; }
+
+  .page-rulebook {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--dark);
+    overflow-x: hidden;
+  }
+
+  .page-rulebook.lang-en {
+    font-family: 'Inter', var(--font-body);
+  }
+
+  .page-rulebook.lang-en .hero h1,
+  .page-rulebook.lang-en .section-title,
+  .page-rulebook.lang-en .card h3,
+  .page-rulebook.lang-en .quick-ref h2 {
+    letter-spacing: 0;
+  }
+
+  /* Language switching */
+  .en { display: none; }
+  .page-rulebook.lang-en .zh { display: none; }
+  .page-rulebook.lang-en .en { display: revert; }
+  .page-rulebook.lang-en span.en { display: inline; }
+  .page-rulebook.lang-en div.en, .page-rulebook.lang-en p.en, .page-rulebook.lang-en li.en, .page-rulebook.lang-en td.en, .page-rulebook.lang-en th.en, .page-rulebook.lang-en h1.en, .page-rulebook.lang-en h2.en, .page-rulebook.lang-en h3.en, .page-rulebook.lang-en h4.en { display: block; }
+  .page-rulebook.lang-en td.en { display: table-cell; }
+  .page-rulebook.lang-en th.en { display: table-cell; }
+  .page-rulebook.lang-en tr.en { display: table-row; }
+  .page-rulebook.lang-en li.en { display: list-item; }
+
+  /* Language toggle button */
+  .lang-toggle {
+    position: fixed;
+    top: 18px;
+    right: 18px;
+    z-index: 100;
+    background: var(--dark);
+    color: var(--yellow);
+    border: 3px solid var(--yellow);
+    border-radius: 50px;
+    padding: 10px 22px;
+    font-weight: 900;
+    font-size: .95rem;
+    cursor: pointer;
+    box-shadow: 3px 3px 0 var(--red);
+    font-family: inherit;
+    transition: transform .15s;
+  }
+  .lang-toggle:hover { transform: translateY(-2px); }
+  .lang-toggle:active { transform: translateY(1px); box-shadow: 2px 2px 0 var(--red); }
+
+  /* ====== HERO (手繪餐牌風) ====== */
+  .hero {
+    background: var(--red);
+    color: var(--cream);
+    text-align: center;
+    padding: 72px 24px 60px;
+    position: relative;
+    overflow: hidden;
+  }
+  /* dashed yellow inner frame — like a hand-drawn menu border */
+  .hero::before {
+    content: '';
+    position: absolute;
+    inset: 14px;
+    border: 2px dashed var(--yellow);
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hero-inner {
+    position: relative;
+    z-index: 1;
+    max-width: 720px;
+    margin: auto;
+  }
+  .hero h1 {
+    font-family: var(--font-body);
+    font-size: clamp(3rem, 9vw, 5.6rem);
+    font-weight: 900;
+    letter-spacing: .04em;
+    line-height: 1.15;
+    color: var(--cream);
+    text-shadow:
+      3px 3px 0 var(--stamp),
+      6px 6px 0 var(--dark);
+    margin-bottom: 14px;
+  }
+  .hero h1 .en {
+    font-family: var(--font-display);
+    font-weight: 400;
+    letter-spacing: .03em;
+    line-height: 1.1;
+  }
+  .hero .subtitle {
+    font-family: var(--font-heading);
+    font-size: clamp(1.1rem, 3vw, 1.7rem);
+    font-weight: 900;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--yellow);
+  }
+  .hero .tagline {
+    font-family: var(--font-hand);
+    margin-top: 22px;
+    font-size: 1.18rem;
+    line-height: 1.85;
+    max-width: 580px;
+    margin-left: auto; margin-right: auto;
+    color: var(--cream);
+  }
+  .hero .tagline strong {
+    color: var(--yellow);
+    font-weight: 400;
+  }
+
+  /* wood plaque badges — like menu boards on a tea-room wall */
+  .hero-badges {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+  .badge {
+    background: var(--yellow);
+    color: var(--dark);
+    backdrop-filter: none;
+    border: 2px solid var(--dark);
+    border-radius: 0;
+    padding: 7px 18px;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: .95rem;
+    letter-spacing: .05em;
+    box-shadow: 2px 2px 0 var(--stamp);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  /* round chop — 茶記認證 stamp, top-right of hero */
+  .stamp {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 96px;
+    height: 96px;
+    border-radius: 50%;
+    border: 3px solid var(--cream);
+    outline: 1px solid var(--cream);
+    outline-offset: 3px;
+    color: var(--cream);
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 11pt;
+    line-height: 1.2;
+    letter-spacing: .06em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(-12deg);
+    padding: 8px;
+    z-index: 2;
+    opacity: .92;
+    pointer-events: none;
+  }
+  .stamp .en { letter-spacing: .04em; font-size: 9pt; }
+
+  /* ====== WAVE ====== */
+  .wave {
+    display: block;
+    width: 100%;
+    height: 60px;
+    background: var(--red);
+  }
+  .wave svg { display: block; width: 100%; height: 60px; }
+  .wave svg path { fill: var(--cream); }
+
+  /* ====== MAIN ====== */
+  .page-rulebook .wrapper {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 8px 26px 90px;
+  }
+
+  /* ====== TABLE OF CONTENTS — 餐牌 ====== */
+  .page-rulebook .toc {
+    margin-top: 40px;
+    padding: 40px 44px 48px;
+    background: var(--cream);
+    border: 3px solid var(--dark);
+    border-radius: 0;
+    position: relative;
+    box-shadow: 6px 6px 0 rgba(0,0,0,.12);
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+  .page-rulebook .toc::before {
+    content: '';
+    position: absolute;
+    inset: 10px;
+    border: 1.5px dashed var(--red);
+    pointer-events: none;
+  }
+  .page-rulebook .toc-header {
+    text-align: center;
+    margin-bottom: 28px;
+    padding-bottom: 18px;
+    border-bottom: 2px dashed var(--dark);
+    position: relative;
+  }
+  .page-rulebook .toc-title {
+    font-family: var(--font-display);
+    font-size: clamp(2.2rem, 6vw, 3rem);
+    font-weight: 900;
+    color: var(--red);
+    letter-spacing: .12em;
+    line-height: 1;
+    margin: 0;
+  }
+  .page-rulebook.lang-en .toc-title {
+    font-family: var(--font-display);
+    letter-spacing: .18em;
+  }
+  .page-rulebook .toc-sub {
+    font-family: var(--font-hand);
+    font-size: 1rem;
+    color: var(--dark);
+    margin-top: 6px;
+    letter-spacing: .04em;
+  }
+  .page-rulebook .toc-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    counter-reset: none;
+  }
+  .page-rulebook .toc-list li {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 10px 0;
+    border-bottom: 1px dotted rgba(0,0,0,.25);
+  }
+  .page-rulebook .toc-list li:last-child { border-bottom: none; }
+  .page-rulebook .toc-num {
+    flex-shrink: 0;
+    width: 34px;
+    height: 34px;
+    background: var(--red);
+    color: var(--cream);
+    border: 2px solid var(--dark);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: 1rem;
+    box-shadow: 2px 2px 0 rgba(0,0,0,.15);
+  }
+  .page-rulebook .toc-num-star { background: var(--yellow); color: var(--dark); }
+  .page-rulebook .toc-num-bang  { background: var(--dark); color: var(--yellow); }
+  .page-rulebook .toc-list a {
+    flex: 1;
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+    color: var(--dark);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .page-rulebook .toc-list a:hover { color: var(--red); }
+  .page-rulebook .toc-name {
+    font-family: var(--font-heading);
+    font-size: 1.05rem;
+    font-weight: 900;
+  }
+  .page-rulebook .toc-dots {
+    flex: 1;
+    border-bottom: 2px dotted rgba(0,0,0,.35);
+    height: .6em;
+    min-width: 24px;
+  }
+  .page-rulebook .toc-page {
+    font-family: var(--font-hand);
+    font-size: 1.1rem;
+    color: var(--red);
+    font-weight: 700;
+  }
+  .page-rulebook .toc-page::before { content: '—'; }
+  .page-rulebook .toc-stamp {
+    position: absolute;
+    top: 24px;
+    right: 28px;
+    width: 78px;
+    height: 78px;
+    border: 2px solid var(--red);
+    outline: 1px solid var(--red);
+    outline-offset: 3px;
+    border-radius: 50%;
+    color: var(--red);
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: .78rem;
+    line-height: 1.15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transform: rotate(-14deg);
+    opacity: .88;
+  }
+  .page-rulebook .toc-stamp .en { font-size: .62rem; letter-spacing: .04em; }
+
+  /* ====== SECTION ====== */
+  .page-rulebook section {
+    margin-top: 64px;
+  }
+  .page-rulebook section:first-of-type { margin-top: 40px; }
+
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 20px;
+  }
+  .section-number {
+    flex-shrink: 0;
+    width: 52px; height: 52px;
+    background: var(--red);
+    color: #fff;
+    border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 1.4rem;
+    font-weight: 900;
+    box-shadow: 3px 3px 0 rgba(0,0,0,.15);
+    border: 3px solid var(--dark);
+  }
+  .section-title {
+    font-size: clamp(1.4rem, 4vw, 1.9rem);
+    font-weight: 900;
+    line-height: 1.2;
+    border-bottom: 4px solid var(--yellow);
+    padding-bottom: 4px;
+  }
+
+  /* ====== CARDS — 餐牌項目 ====== */
+  .card {
+    background: #FFFEF7;
+    border: 1px solid var(--jade);
+    border-left: 4px solid var(--red);
+    border-radius: 0;
+    padding: 22px 26px 20px;
+    box-shadow: none;
+    margin-bottom: 18px;
+  }
+  .card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.2rem;
+    font-weight: 900;
+    color: var(--jade);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px dotted var(--jade);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .card p, .card li {
+    font-size: .98rem;
+    line-height: 1.75;
+  }
+  .card ul, .card ol {
+    padding-left: 22px;
+    margin-top: 6px;
+  }
+  .card li + li { margin-top: 4px; }
+
+  /* ====== HIGHLIGHT — 落單紙 (order chits) ====== */
+  .highlight {
+    position: relative;
+    background: var(--paper);
+    border: none;
+    border-radius: 0;
+    padding: 28px 26px 24px 40px;
+    margin: 20px 0;
+    font-family: var(--font-body);
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.75;
+    color: var(--dark);
+    /* three punch holes down the left edge */
+    background-image:
+      radial-gradient(circle at 14px 22%, rgba(0,0,0,.5) 3px, transparent 3.5px),
+      radial-gradient(circle at 14px 50%, rgba(0,0,0,.5) 3px, transparent 3.5px),
+      radial-gradient(circle at 14px 78%, rgba(0,0,0,.5) 3px, transparent 3.5px);
+    /* torn paper top + bottom */
+    clip-path: polygon(
+      0% 7px, 5% 0%, 10% 7px, 15% 0%, 20% 7px, 25% 0%, 30% 7px, 35% 0%, 40% 7px, 45% 0%, 50% 7px, 55% 0%, 60% 7px, 65% 0%, 70% 7px, 75% 0%, 80% 7px, 85% 0%, 90% 7px, 95% 0%, 100% 7px,
+      100% calc(100% - 7px), 95% 100%, 90% calc(100% - 7px), 85% 100%, 80% calc(100% - 7px), 75% 100%, 70% calc(100% - 7px), 65% 100%, 60% calc(100% - 7px), 55% 100%, 50% calc(100% - 7px), 45% 100%, 40% calc(100% - 7px), 35% 100%, 30% calc(100% - 7px), 25% 100%, 20% calc(100% - 7px), 15% 100%, 10% calc(100% - 7px), 5% 100%, 0% calc(100% - 7px)
+    );
+  }
+  .highlight::before {
+    content: "落單 / ORDER";
+    display: block;
+    font-family: var(--font-heading);
+    font-size: .76rem;
+    font-weight: 900;
+    letter-spacing: .14em;
+    color: var(--stamp);
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+  .highlight::after {
+    content: "No. 047";
+    position: absolute;
+    top: 14px;
+    right: 18px;
+    font-family: var(--font-hand);
+    font-size: .92rem;
+    color: var(--stamp);
+    border: 1.5px solid var(--stamp);
+    padding: 2px 7px;
+    transform: rotate(-6deg);
+    opacity: .85;
+    pointer-events: none;
+  }
+  .highlight strong { color: var(--stamp); font-weight: 900; }
+
+  .highlight.red   { background: #FECACA; }
+  .highlight.red::before   { content: "緊急 / URGENT"; color: var(--stamp); }
+  .highlight.pink  { background: var(--pink); }
+  .highlight.pink::before  { content: "加單 / ADD"; color: #be185d; }
+  .highlight.pink::after   { color: #be185d; border-color: #be185d; content: "No. 062"; }
+  .highlight.green { background: #D4F4C5; }
+  .highlight.green::before { content: "推介 / RECOMMEND"; color: var(--jade); }
+  .highlight.green::after  { color: var(--jade); border-color: var(--jade); content: "No. 028"; }
+  .highlight.blue  { background: #CFE3FF; }
+  .highlight.blue::before  { content: "備註 / NOTE"; color: #1d4ed8; }
+  .highlight.blue::after   { color: #1d4ed8; border-color: #1d4ed8; content: "No. 015"; }
+
+  /* ====== TAG PILL ====== */
+  .tag {
+    display: inline-block;
+    padding: 3px 12px;
+    border-radius: 50px;
+    font-size: .82rem;
+    font-weight: 700;
+    border: 2px solid var(--dark);
+    margin-right: 4px;
+  }
+  .tag-red    { background: var(--red); color: #fff; }
+  .tag-orange { background: var(--orange); color: var(--dark); }
+  .tag-green  { background: var(--green); color: #fff; }
+  .tag-blue   { background: var(--blue); color: #fff; }
+  .tag-purple { background: var(--purple); color: #fff; }
+  .tag-pink   { background: var(--pink); color: #fff; }
+
+  /* ====== ICON GRID — 膠片餐牌格 ====== */
+  .icon-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 10px;
+    margin-top: 14px;
+  }
+  .icon-item {
+    background: #FFFEF7;
+    border: 1px solid var(--jade);
+    border-radius: 0;
+    padding: 18px 16px;
+    text-align: center;
+    box-shadow: none;
+    transition: transform .15s;
+  }
+  .icon-item:hover { transform: translateY(-2px); }
+  .icon-item .emoji {
+    font-size: 2.1rem;
+    margin-bottom: 8px;
+    line-height: 1;
+  }
+  /* SVG sprite icons — line-art, follow currentColor */
+  .ico {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: -.15em;
+    fill: none;
+    stroke: currentColor;
+  }
+  .icon-item .ico {
+    display: block;
+    width: 36px;
+    height: 36px;
+    margin: 2px auto 10px;
+    color: var(--red);
+    stroke-width: 1.6;
+  }
+  .icon-item .label {
+    font-family: var(--font-heading);
+    font-weight: 900;
+    font-size: .98rem;
+    color: var(--jade);
+    padding-bottom: 4px;
+    margin-bottom: 4px;
+    border-bottom: 1px solid var(--jade);
+    letter-spacing: .02em;
+  }
+  .icon-item .desc  { font-size: .82rem; line-height: 1.5; color: #555; }
+
+  /* ====== FLOW STEPS ====== */
+  .flow {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    margin-top: 18px;
+  }
+  .flow-step {
+    display: flex;
+    gap: 16px;
+    position: relative;
+  }
+  .flow-line {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    width: 44px;
+  }
+  .flow-dot {
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    background: var(--orange);
+    border: 3px solid var(--dark);
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900;
+    font-size: 1.1rem;
+    z-index: 1;
+    box-shadow: 2px 2px 0 var(--dark);
+  }
+  .flow-connector {
+    width: 4px;
+    flex: 1;
+    background: var(--dark);
+    border-radius: 2px;
+  }
+  .flow-content {
+    background: #fff;
+    border: 3px solid var(--dark);
+    border-radius: 14px;
+    padding: 16px 20px;
+    margin-bottom: 12px;
+    box-shadow: 3px 3px 0 var(--dark);
+    flex: 1;
+  }
+  .flow-content h4 {
+    font-weight: 900;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+  }
+  .flow-content p, .flow-content li {
+    font-size: .92rem;
+    line-height: 1.65;
+  }
+  .flow-content ul { padding-left: 20px; margin-top: 4px; }
+
+  /* ====== TABLE ====== */
+  .rule-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border: 3px solid var(--dark);
+    border-radius: 14px;
+    overflow: hidden;
+    margin-top: 14px;
+    box-shadow: 4px 4px 0 var(--dark);
+  }
+  .rule-table th {
+    background: var(--red);
+    color: #fff;
+    font-weight: 900;
+    padding: 12px 16px;
+    text-align: left;
+    font-size: .95rem;
+  }
+  .rule-table td {
+    padding: 12px 16px;
+    font-size: .92rem;
+    line-height: 1.6;
+    border-top: 2px solid #eee;
+  }
+  .rule-table tr:nth-child(even) td { background: #FFF8EC; }
+
+  /* ====== VERSUS BOX ====== */
+  .versus {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .versus-box {
+    border: 3px solid var(--dark);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 3px 3px 0 var(--dark);
+  }
+  .versus-box.success { background: #BBF7D0; }
+  .versus-box.fail    { background: #FECACA; }
+  .versus-box h4 {
+    font-weight: 900;
+    margin-bottom: 8px;
+    font-size: 1rem;
+  }
+  .versus-box p { font-size: .9rem; line-height: 1.6; }
+
+  /* ====== QUICK REF ====== */
+  .quick-ref {
+    background: var(--dark);
+    color: #fff;
+    border-radius: 22px;
+    padding: 36px 32px;
+    margin-top: 52px;
+    box-shadow: 6px 6px 0 var(--red);
+    border: 3px solid var(--dark);
+  }
+  .quick-ref h2 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 900;
+    margin-bottom: 24px;
+    color: var(--yellow);
+  }
+  .qr-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(170px, 1fr));
+    gap: 12px;
+  }
+  .qr-item {
+    background: rgba(255,255,255,.08);
+    border: 2px solid rgba(255,255,255,.15);
+    border-radius: 12px;
+    padding: 14px;
+    text-align: center;
+  }
+  .qr-item .step { font-size: .78rem; text-transform: uppercase; letter-spacing: .08em; color: var(--orange); font-weight: 700; }
+  .qr-item .action { font-weight: 900; font-size: 1rem; margin-top: 4px; }
+  .qr-item .detail { font-size: .8rem; color: #ccc; margin-top: 4px; line-height: 1.4; }
+
+  /* ====== GLOSSARY ====== */
+  .glossary-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 14px;
+  }
+  .glossary-item {
+    background: #fff;
+    border: 3px solid var(--dark);
+    border-radius: 14px;
+    padding: 18px;
+    box-shadow: 3px 3px 0 var(--dark);
+  }
+  .glossary-item .term {
+    font-weight: 900;
+    font-size: 1.05rem;
+    margin-bottom: 6px;
+    display: flex; align-items: center; gap: 6px;
+  }
+  .glossary-item .def {
+    font-size: .88rem;
+    line-height: 1.6;
+    color: #444;
+  }
+
+  /* ====== FOOTER ====== */
+  .footer {
+    text-align: center;
+    padding: 40px 20px;
+    font-size: .85rem;
+    color: #999;
+    border-top: 3px dashed #ddd;
+    margin-top: 60px;
+  }
+  .footer strong { color: var(--red); }
+
+  /* ====== MISC ====== */
+  .mt { margin-top: 14px; }
+  .bold { font-weight: 900; }
+  .text-red { color: var(--red); }
+
+  @media print {
+    /* @page rules moved to App.jsx printPageStyles so they are
+       tab-aware and don't conflict with booklet A5 layout */
+
+    /* ====== GLOBAL PRINT RESET ====== */
+    .page-rulebook,
+    .page-rulebook * {
+      box-shadow: none !important;
+      text-shadow: none !important;
+      overflow-wrap: break-word;
+      word-wrap: break-word;
+    }
+
+    .page-rulebook {
+      background: #fff;
+      color: var(--dark);
+      font-size: 9.6pt;
+      line-height: 1.55;
+    }
+
+    .page-rulebook img,
+    .page-rulebook svg {
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* ====== COVER PAGE (手繪餐牌風) ====== */
+    .page-rulebook .hero {
+      min-height: 265mm;
+      width: 100%;
+      margin: 0;
+      padding: 40mm 18mm 30mm;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      break-after: page;
+      page-break-after: always;
+      background: var(--red);
+      position: relative;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      color-adjust: exact;
+    }
+    /* dashed yellow inner frame */
+    .page-rulebook .hero::before {
+      content: '';
+      position: absolute;
+      inset: 12mm;
+      border: 1.2pt dashed var(--yellow);
+      pointer-events: none;
+    }
+    /* bottom yellow rule (kept from original) */
+    .page-rulebook .hero::after {
+      content: '';
+      position: absolute;
+      left: 22mm; right: 22mm; bottom: 22mm;
+      height: 2.5pt;
+      background: var(--yellow);
+    }
+    .page-rulebook .hero-inner {
+      max-width: none;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+    .page-rulebook .hero h1 {
+      font-family: var(--font-body);
+      font-size: 52pt;
+      font-weight: 900;
+      line-height: 1.1;
+      letter-spacing: .04em;
+      color: var(--cream);
+      text-shadow:
+        2pt 2pt 0 var(--stamp),
+        4pt 4pt 0 var(--dark);
+    }
+    .page-rulebook .hero h1 .en {
+      font-family: var(--font-display);
+      font-weight: 400;
+      letter-spacing: .03em;
+      line-height: 1.05;
+    }
+    .page-rulebook .hero .subtitle {
+      font-family: var(--font-heading);
+      font-size: 14pt;
+      font-weight: 900;
+      letter-spacing: .14em;
+      color: var(--yellow);
+      margin-top: 5mm;
+    }
+    .page-rulebook .hero .tagline {
+      font-family: var(--font-hand);
+      font-size: 12pt;
+      line-height: 1.75;
+      margin-top: 7mm;
+      color: var(--cream);
+    }
+    .page-rulebook .hero .tagline strong {
+      color: var(--yellow);
+      font-weight: 400;
+    }
+    .page-rulebook .hero-badges { margin-top: 11mm; gap: 3mm; }
+    .page-rulebook .badge {
+      font-family: var(--font-heading);
+      font-size: 9.5pt;
+      font-weight: 900;
+      letter-spacing: .05em;
+      padding: 1.5mm 4mm;
+      border: 1pt solid var(--dark);
+      border-radius: 0;
+      background: var(--yellow);
+      color: var(--dark);
+      box-shadow: 1pt 1pt 0 var(--stamp);
+    }
+    .page-rulebook .stamp {
+      position: absolute;
+      top: 22mm;
+      right: 22mm;
+      width: 30mm;
+      height: 30mm;
+      border-radius: 50%;
+      border: 1.2pt solid var(--cream);
+      outline: .4pt solid var(--cream);
+      outline-offset: 1mm;
+      color: var(--cream);
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: 10pt;
+      line-height: 1.15;
+      letter-spacing: .06em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: rotate(-12deg);
+      padding: 2mm;
+      opacity: .92;
+    }
+    .page-rulebook .stamp .en { font-size: 7.5pt; letter-spacing: .04em; }
+
+    .page-rulebook .wave,
+    .page-rulebook .footer,
+    .page-rulebook .lang-toggle {
+      display: none !important;
+    }
+
+    /* ====== TWO-COLUMN DENSE FLOW ====== */
+    .page-rulebook .wrapper {
+      max-width: none;
+      padding: 0;
+      column-count: 2;
+      column-gap: 7mm;
+      column-fill: auto;
+      column-rule: .4pt dotted #bbb;
+    }
+    .page-rulebook section {
+      margin-top: 0;
+      padding-top: 4mm;
+      break-before: auto;
+    }
+    .page-rulebook section:first-of-type {
+      padding-top: 0;
+    }
+
+    /* ====== TABLE OF CONTENTS — print ====== */
+    .page-rulebook .toc {
+      column-span: all;
+      break-after: page;
+      page-break-after: always;
+      margin: 0;
+      padding: 14mm 16mm 16mm;
+      min-height: 240mm;
+      background: var(--cream);
+      border: 1.2pt solid var(--dark);
+      border-radius: 0;
+      box-shadow: none;
+      position: relative;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-rulebook .toc::before {
+      content: '';
+      position: absolute;
+      inset: 4mm;
+      border: .6pt dashed var(--red);
+      pointer-events: none;
+    }
+    .page-rulebook .toc-header {
+      text-align: center;
+      margin-bottom: 10mm;
+      padding-bottom: 6mm;
+      border-bottom: .8pt dashed var(--dark);
+    }
+    .page-rulebook .toc-title {
+      font-family: var(--font-display);
+      font-size: 36pt;
+      font-weight: 900;
+      color: var(--red);
+      letter-spacing: .12em;
+      line-height: 1;
+      margin: 0;
+    }
+    .page-rulebook .toc-sub {
+      font-family: var(--font-hand);
+      font-size: 11pt;
+      color: var(--dark);
+      margin-top: 2mm;
+      letter-spacing: .04em;
+    }
+    .page-rulebook .toc-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .page-rulebook .toc-list li {
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+      padding: 3mm 0;
+      border-bottom: .4pt dotted rgba(0,0,0,.35);
+      break-inside: avoid;
+    }
+    .page-rulebook .toc-list li:last-child { border-bottom: none; }
+    .page-rulebook .toc-num {
+      flex-shrink: 0;
+      width: 9mm;
+      height: 9mm;
+      background: var(--red);
+      color: var(--cream);
+      border: .8pt solid var(--dark);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: 11pt;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-rulebook .toc-num-star { background: var(--yellow); color: var(--dark); }
+    .page-rulebook .toc-num-bang { background: var(--dark); color: var(--yellow); }
+    .page-rulebook .toc-list a {
+      flex: 1;
+      display: flex;
+      align-items: baseline;
+      gap: 3mm;
+      color: var(--dark);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .page-rulebook .toc-name {
+      font-family: var(--font-heading);
+      font-size: 12pt;
+      font-weight: 900;
+    }
+    .page-rulebook .toc-dots {
+      flex: 1;
+      border-bottom: .8pt dotted rgba(0,0,0,.5);
+      height: 1.2mm;
+      min-width: 6mm;
+    }
+    .page-rulebook .toc-page {
+      font-family: var(--font-hand);
+      font-size: 12pt;
+      color: var(--red);
+      font-weight: 700;
+    }
+    .page-rulebook .toc-page::before { content: ''; }
+    .page-rulebook .toc-page[data-target]::before {
+      content: "p. " target-counter(attr(data-target), page);
+    }
+    .page-rulebook .toc-list li a[href="#sec-objective"]  .toc-page::before { content: "p. " target-counter("#sec-objective", page); }
+    .page-rulebook .toc-list li a[href="#sec-components"] .toc-page::before { content: "p. " target-counter("#sec-components", page); }
+    .page-rulebook .toc-list li a[href="#sec-characters"] .toc-page::before { content: "p. " target-counter("#sec-characters", page); }
+    .page-rulebook .toc-list li a[href="#sec-initial"]    .toc-page::before { content: "p. " target-counter("#sec-initial", page); }
+    .page-rulebook .toc-list li a[href="#sec-setup"]      .toc-page::before { content: "p. " target-counter("#sec-setup", page); }
+    .page-rulebook .toc-list li a[href="#sec-cards"]      .toc-page::before { content: "p. " target-counter("#sec-cards", page); }
+    .page-rulebook .toc-list li a[href="#sec-flow"]       .toc-page::before { content: "p. " target-counter("#sec-flow", page); }
+    .page-rulebook .toc-list li a[href="#sec-bluff"]      .toc-page::before { content: "p. " target-counter("#sec-bluff", page); }
+    .page-rulebook .toc-list li a[href="#sec-rush"]       .toc-page::before { content: "p. " target-counter("#sec-rush", page); }
+    .page-rulebook .toc-list li a[href="#sec-glossary"]   .toc-page::before { content: "p. " target-counter("#sec-glossary", page); }
+    .page-rulebook .toc-list li a[href="#sec-style"]      .toc-page::before { content: "p. " target-counter("#sec-style", page); }
+    .page-rulebook .toc-stamp {
+      position: absolute;
+      top: 12mm;
+      right: 14mm;
+      width: 24mm;
+      height: 24mm;
+      border: .8pt solid var(--red);
+      outline: .4pt solid var(--red);
+      outline-offset: 1mm;
+      border-radius: 50%;
+      color: var(--red);
+      font-family: var(--font-heading);
+      font-weight: 900;
+      font-size: 8pt;
+      line-height: 1.15;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transform: rotate(-14deg);
+      opacity: .9;
+    }
+    .page-rulebook .toc-stamp .en { font-size: 6pt; letter-spacing: .04em; }
+
+    /* ====== ELEMENTS THAT SPAN BOTH COLUMNS ====== */
+    .page-rulebook .section-header,
+    .page-rulebook .rule-table,
+    .page-rulebook .flow,
+    .page-rulebook .icon-grid,
+    .page-rulebook .glossary-grid,
+    .page-rulebook .quick-ref,
+    .page-rulebook .versus {
+      column-span: all;
+      -webkit-column-span: all;
+    }
+    .page-rulebook .section-header { margin-top: 4mm; }
+    .page-rulebook section:first-of-type .section-header { margin-top: 0; }
+
+    .page-rulebook p,
+    .page-rulebook li,
+    .page-rulebook td {
+      orphans: 3;
+      widows: 3;
+    }
+
+    /* Atomic blocks that must NEVER break across pages.
+       Note: .card is intentionally omitted — some cards wrap very tall
+       content (character table, full action table, phase-3 flow) that
+       cannot fit on a single page; forcing break-inside: avoid on them
+       leaves orphaned headers and clipped fragments. Inner atoms below
+       still keep themselves intact. */
+    .page-rulebook .highlight,
+    .page-rulebook .icon-item,
+    .page-rulebook .flow-step,
+    .page-rulebook .flow-content,
+    .page-rulebook .versus-box,
+    .page-rulebook .glossary-item,
+    .page-rulebook .section-header {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* Keep section headers with whatever content follows them, so a
+       chapter title never gets stranded at the bottom of a page while
+       its body jumps to the next. Complements break-after: avoid on
+       .section-header below. */
+    .page-rulebook .section-header + *,
+    .page-rulebook section > .section-header + * {
+      break-before: avoid;
+      page-break-before: avoid;
+    }
+
+    /* Keep card sub-headings (phase titles etc.) with their first
+       paragraph so they don't orphan at a page bottom. */
+    .page-rulebook .card h3,
+    .page-rulebook .card h4,
+    .page-rulebook .flow-content h4 {
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    /* ====== CHAPTER HEADER BAND ====== */
+    .page-rulebook .section-header {
+      break-after: avoid;
+      page-break-after: avoid;
+      display: flex;
+      align-items: center;
+      gap: 4mm;
+      margin: 0 0 5mm;
+      padding: 3.5mm 5mm;
+      background: var(--dark);
+      border-radius: 0;
+      border: none;
+      border-left: 4mm solid var(--yellow);
+      position: relative;
+    }
+    .page-rulebook .section-number {
+      flex-shrink: 0;
+      width: 11mm;
+      height: 11mm;
+      font-size: 14pt;
+      background: var(--yellow);
+      color: var(--dark);
+      border: 2px solid var(--yellow);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+    }
+    .page-rulebook .section-title {
+      color: #fff;
+      font-size: 15pt;
+      font-weight: 900;
+      border-bottom: none;
+      padding-bottom: 0;
+      letter-spacing: .02em;
+      line-height: 1.2;
+      flex: 1;
+      min-width: 0;
+    }
+
+    /* ====== CARDS — 餐牌項目 ====== */
+    .page-rulebook .card {
+      padding: 3.5mm 4.5mm;
+      margin-bottom: 3mm;
+      border: .8pt solid var(--jade);
+      border-left: 2.5pt solid var(--red);
+      border-radius: 0;
+      background: #FFFEF7;
+      box-shadow: none;
+    }
+    .page-rulebook .card h3 {
+      font-family: var(--font-heading);
+      font-size: 10.8pt;
+      font-weight: 900;
+      color: var(--jade);
+      margin-bottom: 2mm;
+      padding-bottom: 1mm;
+      border-bottom: 1pt dotted var(--jade);
+      gap: 2mm;
+    }
+    .page-rulebook .card p,
+    .page-rulebook .card li {
+      font-size: 9.2pt;
+      line-height: 1.55;
+    }
+    .page-rulebook .card ul,
+    .page-rulebook .card ol { padding-left: 5mm; margin-top: 1mm; }
+    .page-rulebook .card li + li { margin-top: 0.5mm; }
+
+    /* ====== CALLOUT — 落單紙 (print: simplified) ====== */
+    .page-rulebook .highlight {
+      padding: 3.5mm 5mm 3.5mm 6mm;
+      margin: 3mm 0;
+      font-family: var(--font-body);
+      font-size: 9.5pt;
+      line-height: 1.6;
+      font-weight: 700;
+      border: 1pt dashed #999;
+      border-left: 1.8pt solid var(--stamp);
+      border-radius: 0;
+      background: var(--paper);
+      position: relative;
+      clip-path: none;
+      background-image: none;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+    .page-rulebook .highlight.red    { background: #FECACA; border-left-color: var(--stamp); }
+    .page-rulebook .highlight.green  { background: #E8F5DA; border-left-color: var(--jade); }
+    .page-rulebook .highlight.blue   { background: #DCEBFF; border-left-color: #1d4ed8; }
+    .page-rulebook .highlight.pink   { background: var(--pink); border-left-color: #be185d; }
+    .page-rulebook .highlight::before {
+      content: "落單 / ORDER";
+      display: block;
+      font-family: var(--font-heading);
+      font-size: 7pt;
+      font-weight: 900;
+      letter-spacing: .14em;
+      color: var(--stamp);
+      margin-bottom: 1.5mm;
+      text-transform: uppercase;
+    }
+    .page-rulebook .highlight.red::before   { content: "緊急 / URGENT"; color: var(--stamp); }
+    .page-rulebook .highlight.green::before { content: "推介 / RECOMMEND"; color: var(--jade); }
+    .page-rulebook .highlight.blue::before  { content: "備註 / NOTE"; color: #1d4ed8; }
+    .page-rulebook .highlight.pink::before  { content: "加單 / ADD"; color: #be185d; }
+    .page-rulebook .highlight::after {
+      content: "No. 047";
+      position: absolute;
+      top: 1.5mm;
+      right: 3mm;
+      font-family: var(--font-hand);
+      font-size: 8pt;
+      color: var(--stamp);
+      border: .8pt solid var(--stamp);
+      padding: .3mm 1.6mm;
+      transform: rotate(-6deg);
+      opacity: .85;
+    }
+    .page-rulebook .highlight.pink::after  { content: "No. 062"; color: #be185d; border-color: #be185d; }
+    .page-rulebook .highlight.green::after { content: "No. 028"; color: var(--jade); border-color: var(--jade); }
+    .page-rulebook .highlight.blue::after  { content: "No. 015"; color: #1d4ed8; border-color: #1d4ed8; }
+    .page-rulebook .highlight strong { color: var(--stamp); font-weight: 900; }
+
+    /* ====== FLOW STEPS ====== */
+    .page-rulebook .flow { margin-top: 3mm; }
+    .page-rulebook .flow-step { margin-bottom: 0; }
+    .page-rulebook .flow-line { width: 9mm; }
+    .page-rulebook .flow-dot {
+      width: 9mm; height: 9mm;
+      font-size: 9.5pt;
+      border-width: 1.5px;
+    }
+    .page-rulebook .flow-connector { width: 1.5px; }
+    .page-rulebook .flow-content {
+      padding: 2.8mm 4mm;
+      margin-bottom: 2.5mm;
+      border: 1px solid #d8d8d8;
+      border-radius: 0;
+      background: #fff;
+    }
+    .page-rulebook .flow-content h4 { font-size: 10pt; margin-bottom: 1mm; }
+    .page-rulebook .flow-content p,
+    .page-rulebook .flow-content li { font-size: 8.8pt; line-height: 1.5; }
+    .page-rulebook .flow-content ul { padding-left: 5mm; margin-top: 1mm; }
+
+    /* ====== ICON GRID — 膠片餐牌格 ====== */
+    .page-rulebook .icon-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2.5mm;
+      margin-top: 3mm;
+    }
+    .page-rulebook .icon-item {
+      padding: 3mm 2mm;
+      border: .8pt solid var(--jade);
+      border-radius: 0;
+      background: #FFFEF7;
+      box-shadow: none;
+    }
+    .page-rulebook .icon-item .emoji { font-size: 15pt; margin-bottom: 1.2mm; }
+    .page-rulebook .icon-item .ico {
+      width: 7mm;
+      height: 7mm;
+      margin: 0 auto 1.2mm;
+      color: var(--red);
+      stroke-width: 1.4;
+    }
+    .page-rulebook .icon-item .label {
+      font-family: var(--font-heading);
+      font-size: 8.8pt;
+      font-weight: 900;
+      color: var(--jade);
+      padding-bottom: .8mm;
+      margin-bottom: .8mm;
+      border-bottom: .6pt solid var(--jade);
+    }
+    .page-rulebook .icon-item .desc  { font-size: 7.6pt; line-height: 1.4; color: #555; }
+
+    /* ====== GLOSSARY ====== */
+    .page-rulebook .glossary-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 3mm;
+      margin-top: 3mm;
+    }
+    .page-rulebook .glossary-item {
+      padding: 2.8mm 4mm;
+      border: 1px solid #d8d8d8;
+      border-left: 3px solid var(--orange);
+      border-radius: 0;
+      background: #fff;
+    }
+    .page-rulebook .glossary-item .term { font-size: 9.6pt; margin-bottom: 1mm; }
+    .page-rulebook .glossary-item .def  { font-size: 8.4pt; line-height: 1.5; color: #333; }
+
+    /* ====== TABLE ====== */
+    .page-rulebook .rule-table {
+      width: 100%;
+      max-width: 100%;
+      table-layout: fixed;
+      overflow: visible;
+      margin: 3mm 0;
+      border: 1px solid var(--dark);
+      border-radius: 0;
+    }
+    .page-rulebook .rule-table thead { display: table-header-group; }
+    .page-rulebook .rule-table tbody { display: table-row-group; }
+    .page-rulebook .rule-table th {
+      padding: 2.2mm 3mm;
+      font-size: 8.8pt;
+      background: var(--dark);
+      color: #fff;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+    .page-rulebook .rule-table td {
+      padding: 2.2mm 3mm;
+      font-size: 8.4pt;
+      line-height: 1.5;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      white-space: normal;
+    }
+    .page-rulebook .rule-table tr,
+    .page-rulebook .rule-table th,
+    .page-rulebook .rule-table td {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    /* ====== VERSUS ====== */
+    .page-rulebook .versus {
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm;
+      margin: 3mm 0;
+    }
+    .page-rulebook .versus-box {
+      padding: 3mm 4mm;
+      border: 1px solid #c8c8c8;
+      border-radius: 0;
+    }
+    .page-rulebook .versus-box.success { border-left: 3px solid var(--green); }
+    .page-rulebook .versus-box.fail    { border-left: 3px solid var(--red); }
+    .page-rulebook .versus-box h4 { font-size: 9.6pt; margin-bottom: 1mm; }
+    .page-rulebook .versus-box p  { font-size: 8.6pt; line-height: 1.5; }
+
+    /* ====== QUICK-REF ====== */
+    .page-rulebook .quick-ref {
+      margin-top: 6mm;
+      padding: 5mm 6mm;
+      border-radius: 0;
+      border: 2px solid var(--dark);
+      background: var(--dark);
+      color: #fff;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+    .page-rulebook .quick-ref h2 {
+      font-size: 14pt;
+      margin-bottom: 3mm;
+    }
+    .page-rulebook .qr-grid {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 2.5mm;
+    }
+    .page-rulebook .qr-item {
+      padding: 2.5mm;
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: 0;
+    }
+    .page-rulebook .qr-item .step   { font-size: 6.8pt; }
+    .page-rulebook .qr-item .action { font-size: 9pt; }
+    .page-rulebook .qr-item .detail { font-size: 7.4pt; line-height: 1.35; }
+
+    /* ====== TAGS ====== */
+    .page-rulebook .tag {
+      font-size: 7.2pt;
+      padding: 0.5mm 2mm;
+      border-width: 1px;
+      border-radius: 2mm;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .versus { grid-template-columns: 1fr; }
+    .card { padding: 20px 18px 18px; }
+    .hero { padding: 40px 16px 36px; }
+    .lang-toggle { top: 12px; right: 12px; padding: 8px 16px; font-size: .85rem; }
+    .page-rulebook .wrapper { padding: 8px 16px 72px; }
+    .section-header { align-items: flex-start; }
+    .section-number {
+      width: 44px;
+      height: 44px;
+      font-size: 1.1rem;
+    }
+    .section-title {
+      font-size: 1.2rem;
+      line-height: 1.25;
+    }
+    .hero .subtitle,
+    .page-rulebook.lang-en .hero .subtitle {
+      font-size: .98rem;
+      letter-spacing: .03em;
+    }
+    .hero .tagline,
+    .card p,
+    .card li,
+    .flow-content p,
+    .flow-content li,
+    .glossary-item .def {
+      font-size: .92rem;
+      line-height: 1.7;
+    }
+    .rule-table,
+    .summary-table {
+      display: block;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .rule-table th,
+    .rule-table td,
+    .summary-table th,
+    .summary-table td {
+      white-space: nowrap;
+    }
+  }

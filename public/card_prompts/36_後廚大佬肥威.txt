@@ -1,0 +1,35 @@
+Card Name: 後廚大佬 肥威 (Kitchen Boss Fei Wai)
+Category: 角色卡 (Character Card)
+Quantity: x1
+
+Stats:
+- 🔥 抗壓: 5
+- ✋ 手勢: 6
+- 🪑 桌位: 1
+
+Passive 被動「偷雞落鑊」:
+你上餐時，可以將手中 1 張垃圾卡當作任何食材使用（該牌仍可被踢爆，翻開即為抓包）。每次上餐最多使用 1 次，與百搭蓋牌不衝突。
+
+Active 主動技能「落鑊」(每回合 1 次):
+棄掉 2 張手牌，從牌庫抽 3 張牌。
+
+Quote: 「樓面嘈乜鬼呀？落咗鑊就得啦！」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon chubby Hong Kong cha chaan teng kitchen chef character, drawn in Exploding Kittens art style. A large round-bellied man wearing a stained white chef apron over a sleeveless undershirt, a greasy white chef hat tilted to one side. He holds a giant black wok in one hand with flames shooting up from it, and a metal spatula in the other. His face is red from the heat, sweat pouring down, mouth open shouting orders. A single gold tooth visible. Bold black outlines. Background: fiery orange-red (#DC2626). Cartoon flame shapes and smoke swirls around the wok.
+
+Card Layout:
+- Top: Card title "後廚大佬 肥威" in bold Chinese, subtitle "KITCHEN BOSS" in small English, background fiery red
+- Upper center: The illustration (main focus, ~45% of card area)
+- Middle: Stats bar — 🔥 5 | ✋ 6 | 🪑 1
+- Lower middle: Passive icon box — "偷雞落鑊" with a smaller English line "Sneak into the Wok — use 1 trash card as any ingredient when serving"
+- Bottom: Active skill box — "落鑊" with a smaller English line "Into the Wok — discard 2 cards, draw 3 (1/turn)"
+- Footer quote in italic, with a smaller English translation line "What's all the noise? Just throw it in the wok!"
+- Border: Thick bold black border with rounded corners
+- Color theme: Fiery red / black
+
+Dimensions: 63mm x 88mm (standard poker card size)

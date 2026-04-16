@@ -1,0 +1,25 @@
+Card Name: 食評家 (Food Critic)
+Category: 奧客卡 (Difficult Customer Card)
+Quantity: x1
+Requires: 奶茶 (Milk Tea) + 蛋撻 (Egg Tart) + 叉燒 (Char Siu / BBQ Pork)
+Tip: 3
+Special: 🔥 催單 — 每回合結束 +1 怒氣
+Quote: 「我今日嚟做食評，你哋最好唔好出錯。」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon pretentious food critic character, drawn in Exploding Kittens art style. He wears a beret, a fancy scarf, and round hipster glasses. He's holding a tiny notebook in one hand and a magnifying glass in the other, inspecting the food with extreme suspicion. His face has a snobbish frown with pinched lips and one eyebrow raised impossibly high. He's leaning forward with his nose almost touching the plate. A thought bubble shows a big red "X" mark. Bold black outlines around everything. Background: angry red/pink (#FECACA). Small star ratings floating around him, most showing 1 star.
+
+Card Layout:
+- Top: Card title "食評家" in bold Chinese characters with small English subtitle "FOOD CRITIC" directly beneath (about 40% the title size), background light red
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom left: Required ingredients panel — clearly render all THREE required food icons with its Chinese name above and English name below in smaller text. Must show: 🍵 奶茶 / Milk Tea  +  🥧 蛋撻 / Egg Tart  +  🥩 叉燒 / Char Siu (BBQ Pork). Icons must be large, recognizable, labeled, and visually separated with "+" signs. Do NOT omit or abbreviate any ingredient.
+- Bottom right: Tip value "💰 小費 3 / Tip 3" + "🔥 催單 / Rushing" badge
+- Footer: smaller italic English line "Impatient — anger +1 each turn"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light red / warning tones
+
+Dimensions: 63mm x 88mm (standard poker card size)

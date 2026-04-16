@@ -1,0 +1,20 @@
+Card Name: 過期沙嗲醬 (Expired Satay Sauce)
+Category: 垃圾卡 (Trash Card)
+Quantity: x2
+Quote: 「上年嘅醬你都拎出嚟？」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon rusty old jar of expired satay sauce, drawn in Exploding Kittens art style. The jar label is peeling, faded, and dated "1999". The jar has a zombie-like face with crooked teeth and x-ed out eyes. Green moldy fuzz is growing on top of the jar lid and around the rim. A thick blob of darkened brown sauce is oozing out slowly with small mold spots. Tiny green gas bubbles rise up. Bold black outlines around everything. Background: soft purple (#EDE9FE). A radioactive-style warning symbol floating behind it.
+
+Card Layout:
+- Top: Card title "過期沙嗲醬" in bold Chinese characters with small English subtitle "EXPIRED SATAY SAUCE" directly beneath (about 40% the title size), background light purple
+- Center: The illustration (main focus, ~70% of card area)
+- Bottom: Flavor text "上年嘅醬你都拎出嚟？", followed by a smaller italic English line "You're serving last year's sauce?"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light purple / moldy green
+
+Dimensions: 63mm x 88mm (standard poker card size)

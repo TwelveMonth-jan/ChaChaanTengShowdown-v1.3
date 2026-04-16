@@ -1,0 +1,19 @@
+Card Name: 公仔麵 (Instant Noodles)
+Category: 食材卡 (Ingredient Card)
+Quantity: x7
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon bowl of Hong Kong-style instant noodles (出前一丁), drawn in Exploding Kittens art style. The bowl of noodles has a wild crazy face with swirly excited eyes and a huge open mouth laughing. Noodles are flying and swirling out of the bowl chaotically like tentacles. A piece of luncheon meat (餐肉) and a fried egg sit on top as toppings. Massive steam explosion from the bowl. Bold black outlines around everything. Background: warm golden yellow (#FEF3C7). The bowl is a classic white cha chaan teng bowl with blue pattern.
+
+Card Layout:
+- Top: Card title "公仔麵" in bold Chinese characters with thick black outline, with small English subtitle "INSTANT NOODLES" directly beneath (about 40% the size of the Chinese title)
+- Center: The illustration (main focus, ~70% of card area)
+- Bottom: Flavor text "出前一丁，加餐肉加蛋先至完美", followed by a smaller italic English line "Demae Itcho — only perfect with luncheon meat and egg"
+- Border: Thick bold black border with rounded corners
+- Color theme: Golden yellow / warm orange
+
+Dimensions: 63mm x 88mm (standard poker card size)

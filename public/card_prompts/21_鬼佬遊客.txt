@@ -1,0 +1,25 @@
+Card Name: 鬼佬遊客 (Foreign Tourist)
+Category: 奧客卡 (Difficult Customer Card)
+Quantity: x1
+Requires: 叉燒 (Char Siu / BBQ Pork) + 公仔麵 (Instant Noodles) + 奶茶 (Milk Tea)
+Tip: 3
+Special: 🔥 催單 — 每回合結束 +1 怒氣
+Quote: 「Excuse me... I want the FULL Hong Kong experience!」
+
+---
+
+Art Style: Exploding Kittens style — bold black outlines, exaggerated cartoon, vibrant flat colors, humorous and quirky, slightly absurd, hand-drawn feel.
+
+Prompt:
+A cartoon clueless Western tourist in a Hong Kong cha chaan teng, drawn in Exploding Kittens art style. He's a tall sunburnt guy wearing a Hawaiian shirt, cargo shorts, socks with sandals, and a huge camera around his neck. He's holding the Chinese menu upside down with a completely confused face — eyes spinning, question marks floating above his head. He's pointing at random items on the menu. A tiny translation phrasebook is falling out of his pocket. He's wearing a "I ❤️ HK" cap. Bold black outlines around everything. Background: angry red/pink (#FECACA). A speech bubble with badly written Chinese characters.
+
+Card Layout:
+- Top: Card title "鬼佬遊客" in bold Chinese characters with small English subtitle "FOREIGN TOURIST" directly beneath (about 40% the title size), background light red
+- Center: The illustration (main focus, ~55% of card area)
+- Bottom left: Required ingredients panel — clearly render all THREE required food icons with its Chinese name above and English name below in smaller text. Must show: 🥩 叉燒 / Char Siu (BBQ Pork)  +  🍜 公仔麵 / Instant Noodles  +  🍵 奶茶 / Milk Tea. Icons must be large, recognizable, labeled, and visually separated with "+" signs. Do NOT omit or abbreviate any ingredient.
+- Bottom right: Tip value "💰 小費 3 / Tip 3" + "🔥 催單 / Rushing" badge
+- Footer: smaller italic English line "Lost in translation — anger +1 each turn"
+- Border: Thick bold black border with rounded corners
+- Color theme: Light red / tropical colors
+
+Dimensions: 63mm x 88mm (standard poker card size)
