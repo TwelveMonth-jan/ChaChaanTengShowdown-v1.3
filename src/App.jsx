@@ -56,10 +56,19 @@ const printPageStyles = {
 
 export default function App() {
   const [tab, setTab] = useState('rulebook');
-  const [lang, setLang] = useState('zh');
+  const [lang, setLang] = useState('en');
+  const [hintVisible, setHintVisible] = useState(true);
 
-  const toggleLang = () => setLang((l) => (l === 'zh' ? 'en' : 'zh'));
+  const toggleLang = () => {
+    setLang((l) => (l === 'zh' ? 'en' : 'zh'));
+    setHintVisible(false);
+  };
   const handlePrint = () => window.print();
+
+  useEffect(() => {
+    const hideTimer = setTimeout(() => setHintVisible(false), 4500);
+    return () => clearTimeout(hideTimer);
+  }, []);
 
   const langClass = lang === 'en' ? 'lang-en' : 'lang-zh';
   const documentTitle =
@@ -130,6 +139,15 @@ export default function App() {
           </button>
         </div>
       </nav>
+
+      <div
+        className={`lang-hint ${hintVisible ? 'visible' : ''}`}
+        role="status"
+        aria-hidden={!hintVisible}
+      >
+        <span className="hint-en">Tap <strong>中 / EN</strong> to switch language</span>
+        <span className="hint-zh">按 <strong>中 / EN</strong> 切換中英文</span>
+      </div>
 
       <div
         className={`page-rulebook ${langClass}`}
